@@ -2,7 +2,7 @@
 #
 # NOTE: This "production" version only contains differences from site_config.yml.
 
-baseurl: ""
+baseurl: "ods-municipios-andalucia/"
 environment: production
 
 analytics:
