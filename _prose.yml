@@ -151,6 +151,24 @@ prose:
       #       label: "Rational and interpretation"
       #       translation_key: metadata_fields.rational_interpretation
       #       scope: national
+      - name: "source_info"
+        field:
+            element: text
+            label: "source_info"
+            translation_key: my-custom-translations.source_info
+            scope: national         
+      - name: "methodology"
+        field:
+            element: text
+            label: "methodology"
+            translation_key: my-custom-translations.methodology
+            scope: national  
+      - name: "observations"
+        field:
+            element: text
+            label: "observations"
+            translation_key: my-custom-translations.observations
+            scope: national                              
       - name: "national_data_update_url"
         field:
             element: hidden

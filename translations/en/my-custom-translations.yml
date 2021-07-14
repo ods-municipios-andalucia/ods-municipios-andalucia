@@ -5,3 +5,6 @@ target: Target
 targets: Targets
 goal: Goal
 goals: Goals
+source_info: Data source
+methodology: Methodological annex
+observations: Observations
