@@ -168,25 +168,25 @@ map_options:
     weight: 1
     opacity: 1
     color: #888888
-    fillOpacity: 0.7
+    fillOpacity: 0.8
   # Set the style for boundaries that have been selected/highlighted:
   styleHighlighted:
     weight: 1
     opacity: 1
     color: #111111
-    fillOpacity: 0.7
+    fillOpacity: 0.
   # Set the style for top-level boundaries that are displaying in other layers.
   # Note: This is only applicable when using the "nested zoom" feature (see below).
   styleStatic:
     weight: 2
     opacity: 1
-    fillOpacity: 0
+    fillOpacity: 8
     color: #172d44
     dashArray: 5,5    
     
 map_layers:
   - min_zoom: 5
-    max_zoom: 16
+    max_zoom: 18
     subfolder: regions
     label: My map layer label (can be a translation key)
 
