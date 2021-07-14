@@ -95,8 +95,8 @@ reporting_status_extra_fields: []
 # local, relative to the src_dir specified above.
 map_layers:
   - geojson_file: terminos_municipales.geojson
-    name_property: municipio
-    id_property: GeoCode
+    name_property: name
+    id_property: geocode
     output_subfolder: regions
     filename_prefix: indicator_
 # Documentation settings
