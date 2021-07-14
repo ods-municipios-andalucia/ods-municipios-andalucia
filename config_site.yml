@@ -60,28 +60,28 @@ country:
 # Optionally set a title/body for the frontpage banner. The defaults below point to a standard
 # translation, but feel free to change it as needed.
 frontpage_introduction_banner:
-  title: frontpage.intro_title
-  description: frontpage.intro_body
+  title: my-custom-translations.intro_title
+  description: my-custom-translations.intro_body
 
 frontpage_goals_grid:
-  title: Our data for Sustainable Development Goal indicators
-  description: Click on each goal for our Sustainable Development Goal global indicator data.
+  title: my-custom-translations.my-goals-grid-title
+  description: my-custom-translations.my-goals-grid-description
 
 frontpage_cards:
   - title: frontpage.download_all
     include: components/download-all-data.html
-  - title: Lorem ipsum
-    content: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
-      cursus est sed dapibus.
-    button_label: Read more
-    button_link: https://example.com
-  - title: Nam vestibulum
-    content: |
-      Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
-      interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
-    button_label: Read more
-    button_link: https://example.com
+#  - title: Lorem ipsum
+#    content: |
+#      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis
+#      cursus est sed dapibus.
+#    button_label: Read more
+#    button_link: https://example.com
+#  - title: Nam vestibulum
+#    content: |
+#      Nam vestibulum, purus quis porttitor imperdiet, nisl sem mollis nisl, a
+#      interdum risus enim vitae tortor. Donec feugiat accumsan rutrum.
+#    button_label: Read more
+#    button_link: https://example.com
 
 # Pages
 collections:
@@ -106,22 +106,22 @@ menu:
     translation_key: menu.reporting_status
   - path: /about
     translation_key: menu.about
-  - path: /guidance
-    translation_key: menu.guidance
-  - path: /faq
-    translation_key: menu.faq
-  - path: /news
-    translation_key: menu.updates
+  # - path: /guidance
+  #   translation_key: menu.guidance
+  # - path: /faq
+  #   translation_key: menu.faq
+  # - path: /news
+  #   translation_key: menu.updates
 
 footer_menu:
   - path: mailto:informacion.ieca@juntadeandalucia.es
     translation_key: menu.contact_us
-  - path: https://twitter.com/MyTwitterAccount
-    translation_key: general.twitter
-  - path: https://facebook.com/MyFacebookAccount
-    translation_key: general.facebook
+  # - path: https://twitter.com/MyTwitterAccount
+  #   translation_key: general.twitter
+  # - path: https://facebook.com/MyFacebookAccount
+  #   translation_key: general.facebook
   - path: /about/cookies-and-privacy/
-    translation_key: menu.cookies
+    translation_key: my-custom-translations.cookies
 
 # Configure the text (or "translation key") to be used on the
 # non-global metadata tab.
@@ -151,16 +151,44 @@ exclude:
 # Optionally uncomment and update the settings below to control the mapping functionality.
 # These are only a few of the possible settings. For more details, see:
 # https://open-sdg.readthedocs.io/en/latest/maps/
-#map_options:
-#  minZoom: 5
-#  tileURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-#  tileOptions:
-#    attribution: 'My map attribution'
-#map_layers:
-#  - min_zoom: 5
-#    max_zoom: 10
-#    subfolder: my-geojson-subfolder
-#    label: My map layer label (can be a translation key)
+map_options:
+  minZoom: 5
+  tileURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+  tileOptions:
+    attribution: 'My map attribution'
+  # Control the choropleth color range. See https://gka.github.io/chroma.js/#chroma-brewer
+  colorRange: chroma.brewer.BuGn
+  # Set the color for boundaries that have no data.
+  noValueColor: #f0f0f0
+  # For documentation on the style options below, see here:
+  # https://leafletjs.com/reference-1.4.0.html#path-option
+  # Set the default style for boundaries in the map:
+  styleNormal:
+    weight: 1
+    opacity: 1
+    color: #888888
+    fillOpacity: 0.7
+  # Set the style for boundaries that have been selected/highlighted:
+  styleHighlighted:
+    weight: 1
+    opacity: 1
+    color: #111111
+    fillOpacity: 0.7
+  # Set the style for top-level boundaries that are displaying in other layers.
+  # Note: This is only applicable when using the "nested zoom" feature (see below).
+  styleStatic:
+    weight: 2
+    opacity: 1
+    fillOpacity: 0
+    color: #172d44
+    dashArray: 5,5    
+    
+map_layers:
+  - 
+    min_zoom: 5
+    max_zoom: 16
+    subfolder: regions
+    label: My map layer label (can be a translation key)
 
 # Recommend accessibility improvements.
 accessible_tabs: true
@@ -193,10 +221,21 @@ breadcrumbs:
   goal:
     - label: general.home
       path: /
-    - label: general.goals
+    - label: my-custom-translations.goals
       path: /goals
   indicator:
     - label: general.home
       path: /
-    - label: general.goals
+    - label: my-custom-translations.goals
       path: /goals
+
+metadata_tabs:
+  - scope: national
+    title: my-custom-translations.national_metadata
+  #   description: indicator.national_metadata_blurb
+  # - scope: global
+  #   title: indicator.global_metadata
+  #   description: indicator.global_metadata_blurb
+  # - scope: sources
+  #   title: indicator.sources
+  #   description: ''
