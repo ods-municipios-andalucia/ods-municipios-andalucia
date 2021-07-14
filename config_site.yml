@@ -13,7 +13,8 @@ remote_data_prefix: _build
 
 # The list of languages that are translated. The first one is the default.
 languages:
-  - en
+  # - en
+  - es
 
 # URL for the "Edit Data" button on indicators.
 data_edit_url: http://prose.io/#ods-municipios-andalucia/ods-municipios-andalucia/edit/develop/data/indicator_[id].csv
