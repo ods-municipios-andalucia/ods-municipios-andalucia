@@ -6,7 +6,7 @@ remote_theme: open-sdg/open-sdg@1.3.1
 # Replace this title as needed.
 title: Indicators For The Sustainable Development Goals
 # Replace the baseurl with the name of this repository.
-baseurl: "/open-sdg-simple-starter"
+baseurl: "/ods-municipios-andalucia"
 environment: staging
 source: www
 remote_data_prefix: _build
@@ -16,9 +16,9 @@ languages:
   - en
 
 # URL for the "Edit Data" button on indicators.
-data_edit_url: http://prose.io/#my-org/my-repo/edit/develop/data/indicator_[id].csv
+data_edit_url: http://prose.io/#ods-municipios-andalucia/ods-municipios-andalucia/edit/develop/data/indicator_[id].csv
 # URL for the "Edit Metadata" button on indicators.
-metadata_edit_url: http://prose.io/#my-org/my-repo/edit/develop/meta/[id].md
+metadata_edit_url: http://prose.io/#ods-municipios-andalucia/ods-municipios-andalucia/edit/develop/meta/[id].md
 
 # Automatically create indicator pages, goal pages,
 # and some other required pages.
@@ -47,9 +47,9 @@ create_pages:
 
 # Replace the email addresses below.
 email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
+  questions: informacion.ieca@juntadeandalucia.es
+  suggestions: informacion.ieca@juntadeandalucia.es
+  functional: informacion.ieca@juntadeandalucia.es
 
 # International Support
 # Eg name: Australia and adjective: Australian
@@ -114,7 +114,7 @@ menu:
     translation_key: menu.updates
 
 footer_menu:
-  - path: mailto:my-email-address@example.com
+  - path: mailto:informacion.ieca@juntadeandalucia.es
     translation_key: menu.contact_us
   - path: https://twitter.com/MyTwitterAccount
     translation_key: general.twitter
