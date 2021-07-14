@@ -1,13 +1,12 @@
 ---
 layout: page
-title: Contact
+title: Contacto
 permalink: /contact/
 ---
-### We are interested in your feedback regarding this website and its contents.
+## Estamos interesados en sus comentarios sobre este sitio web y su contenido.
 
+- Si tiene preguntas sobre las estadísticas, las fuentes de datos o los metadatos proporcionados en esta sitio web, comuníquese con [{{site.email_contacts.questions}}](mailto:{{site.email_contacts.questions}})
 
-- If you have questions about the statistics, data sources, or metadata provided for UK national statistics, please contact [{{site.email_contacts.questions}}](mailto:{{site.email_contacts.questions}})
+- Si tiene sugerencias sobre el contenido adicional del sitio o las fuentes de datos, comuníquese con [{{site.email_contacts.questions}}](mailto:{{site.email_contacts.questions}})
 
-- If you have suggestions regarding additional site content or data sources, please contact [{{site.email_contacts.suggestions}}](mailto:{{site.email_contacts.suggestions}})  
-
-- If you have suggestions on how to improve the functionality of this website, including data accessibility, please contact [{{site.email_contacts.functional}}](mailto:{{site.email_contacts.functional}})
+- Si tiene sugerencias sobre cómo mejorar la funcionalidad de este sitio web, incluida la accesibilidad de datos, comuníquese con [{{site.email_contacts.questions}}](mailto:{{site.email_contacts.questions}})

@@ -1,11 +1,35 @@
 ---
-title: About
+title: Acerca de
 permalink: /about/
 layout: page
 ---
-
-This website is for disseminating SDG indicator data. We are at an Alpha stage in development, so the site is still 'work in progress'.
-
-Other countries wishing to reuse this site's underlying platform are welcome to do so for free. Our [Guidance page]({{ site.baseurl }}/guidance/) highlights key information on how to do this, linking to detailed technical instructions available in the platform's [documentation](https://open-sdg.readthedocs.io). The [Center for Open Data Enterprise (CODE)](http://www.opendataenterprise.org/) can also provide guidance and support through their [SDG National Reporting Initiative](https://www.sdgreporting.org/).
-
-If you have any feedback on this website or SDG data then please contact us at <a href="mailto:{{site.email_contacts.questions}}">{{site.email_contacts.questions}}</a>. The answers to some frequently asked questions are also available in our [FAQ]({{ site.baseurl }}/faq/).
+<div style="text-align: justify">
+En el año 2015 la ONU aprobó la Agenda 2030 sobre el desarrollo sostenible, en la que se fijaron 17 objetivos, que incluyen desde la eliminación de la pobreza hasta el combate al cambio climático, la educación, la igualdad de la mujer, la defensa del medio ambiente o el diseño de nuestras ciudades. Cada uno de estos objetivos contiene una serie de metas específicas, que particularizan las acciones a desarrollar.
+<br>
+<br>
+A partir de esta aprobación, distintos organismos se han ido sumando a la misma a todos los niveles institucionales, desde organismos multinacionales a locales.
+<br>
+<br>
+En noviembre de 2016, la Comisión Europea expuso su enfoque estratégico para la aplicación de la Agenda 2030, incluidos los Objetivos de Desarrollo Sostenible.
+<br>
+<br>
+El Gobierno de España, en septiembre de 2017, acordó la constitución del Grupo de Alto Nivel (GAN) para la Agenda 2030, con el objetivo de coordinar la posición española y las actuaciones necesarias para el cumplimiento de los objetivos de la Agenda.
+<br>
+<br>
+En diferentes periodos de tiempo, todas la Comunidades Autónomas se han ido adhiriendo a la Agenda 2030, desarrollando sus propias estrategias y asumiendo el reto de alinearse con los Objetivos de Desarrollo Sostenible.
+<br>
+<br>
+En todos los casos planteados, es esencial el cálculo de indicadores que sirvan para medir el grado de cumplimiento de las distintas metas y objetivos.
+<br>
+<br>
+Para esta medición es imprescindible contar con los Organismos Estadísticos, al ser estos los más capacitados dentro de los distintos Gobiernos, para garantizar la correcta definición y obtención de los indicadores a utilizar, tal y como se refleja en la resolución 71/313 de La Asamblea General de Naciones Unidas.
+<br>
+<br>
+El INE y los Organismos de Estadística de las Comunidades Autónomas han incluido en sus Planes y Programas Estadísticos la operación estadística denominada “Indicadores de la Agenda 2030 para el Desarrollo Sostenible”, que tiene por objetivo constituir un marco de indicadores estadísticos, alineados con los establecidos por Naciones Unidas, que sirva para el seguimiento, a diferentes niveles territoriales, de los Objetivos y Metas de la Agenda 2030 para el Desarrollo Sostenible de las Naciones Unidas.
+<br>
+<br>
+En el año 2019, y con el fin de llevar a cabo un trabajo coordinado en el desarrollo de los indicadores de las CCAA, se constituyó un grupo de trabajo entre los órganos de estadística de las CCAA, bajo la forma de red colaborativa, con el objetivo de consensuar la metodología de cálculo de los indicadores de Naciones Unidas para las Comunidades Autónomas, buscando alternativas ante los problemas de territorialización o de pertinencia y garantizando, en todo caso, la comparabilidad.
+<br>
+<br>
+Después de un trabajo intenso, cada Comunidad Autónoma dispone de una primera batería de indicadores común y homogénea y una ficha metodológica estándar que los organismos estadísticos van a difundir en sus respectivas páginas web. 
+</div>
