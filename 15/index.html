@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: '/open-sdg-simple-starter/en',
+  remoteDataBaseUrl: '/ods-municipios-andalucia/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -117,13 +117,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/open-sdg-simple-starter/assets/js/lib/classList.js"></script>
+        <script src="/ods-municipios-andalucia/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/open-sdg-simple-starter/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/open-sdg-simple-starter/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/ods-municipios-andalucia/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/ods-municipios-andalucia/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/open-sdg-simple-starter/assets/css/style.css?v=20210714063240">
+        <link rel="stylesheet" href="/ods-municipios-andalucia/assets/css/style.css?v=20210714072333">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -156,7 +156,7 @@ var translations = {
   <div class="disclaimer-alert">
     <strong class="phase-tag">Alpha</strong>
     
-    This is a development website. We welcome your <a href="mailto:test@example.com">feedback</a>.
+    This is a development website. We welcome your <a href="mailto:informacion.ieca@juntadeandalucia.es">feedback</a>.
   </div>
 </div>
 
@@ -166,8 +166,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/open-sdg-simple-starter/" id="home">
-    <img src="/open-sdg-simple-starter/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      <a class="navbar-brand" href="/ods-municipios-andalucia/" id="home">
+    <img src="/ods-municipios-andalucia/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
@@ -175,7 +175,7 @@ var translations = {
 
     <div class="search-and-desktop-widgets">
       <div id="search" class="menu-target">
-  <form action="/open-sdg-simple-starter/search">
+  <form action="/ods-municipios-andalucia/search">
     <label class="sr-only" for="indicator_search">Search</label>
     <input type="text" name="q" id="indicator_search" title="Search" /><!--
     --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -194,17 +194,17 @@ var translations = {
         aria-haspopup="true">
         <button data-target="menu-mobile" aria-expanded="false">Menu</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/goals">Goals</a>
+    <a href="/ods-municipios-andalucia/goals">Goals</a>
 </li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/reporting-status">Reporting Status</a>
+    <a href="/ods-municipios-andalucia/reporting-status">Reporting Status</a>
 </li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/about">About</a>
+    <a href="/ods-municipios-andalucia/about">About</a>
 </li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/guidance">Guidance</a>
+    <a href="/ods-municipios-andalucia/guidance">Guidance</a>
 </li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/faq">FAQ</a>
+    <a href="/ods-municipios-andalucia/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/news">Updates</a>
+    <a href="/ods-municipios-andalucia/news">Updates</a>
 </li>
 </ul>
 
@@ -214,7 +214,7 @@ var translations = {
         aria-haspopup="true">
         <button data-target="search-mobile" aria-expanded="false">Search</button>
         <div id="search-mobile" class="menu-target">
-  <form action="/open-sdg-simple-starter/search">
+  <form action="/ods-municipios-andalucia/search">
     <label class="sr-only" for="indicator_search-mobile">Search</label>
     <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
     --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -224,17 +224,17 @@ var translations = {
     </li>
 </ul>
       <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/goals">Goals</a>
+    <a href="/ods-municipios-andalucia/goals">Goals</a>
 </li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/reporting-status">Reporting Status</a>
+    <a href="/ods-municipios-andalucia/reporting-status">Reporting Status</a>
 </li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/about">About</a>
+    <a href="/ods-municipios-andalucia/about">About</a>
 </li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/guidance">Guidance</a>
+    <a href="/ods-municipios-andalucia/guidance">Guidance</a>
 </li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/faq">FAQ</a>
+    <a href="/ods-municipios-andalucia/faq">FAQ</a>
 </li><li class="nav-link ">
-    <a href="/open-sdg-simple-starter/news">Updates</a>
+    <a href="/ods-municipios-andalucia/news">Updates</a>
 </li>
 </ul>
 
@@ -251,8 +251,8 @@ var translations = {
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/open-sdg-simple-starter/">Home</a></li>
-  <li><a href="/open-sdg-simple-starter/goals">Goals</a></li>
+  <li><a href="/ods-municipios-andalucia/">Home</a></li>
+  <li><a href="/ods-municipios-andalucia/goals">Goals</a></li>
   
   
 </ol>
@@ -307,7 +307,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-1-1">Forest area as a proportion of total land area</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-1-1">Forest area as a proportion of total land area</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -330,7 +330,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.1.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-1-2">Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-1-2">Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -362,7 +362,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-2-1">Progress towards sustainable forest management</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-2-1">Progress towards sustainable forest management</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -394,7 +394,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-3-1">Proportion of land that is degraded over total land area</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-3-1">Proportion of land that is degraded over total land area</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -426,7 +426,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.4.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-4-1">Coverage by protected areas of important sites for mountain biodiversity</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-4-1">Coverage by protected areas of important sites for mountain biodiversity</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -449,7 +449,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.4.2</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-4-2">Mountain Green Cover Index</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-4-2">Mountain Green Cover Index</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -481,7 +481,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-5-1">Red List Index</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-5-1">Red List Index</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -513,7 +513,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.6.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-6-1">Number of countries that have adopted legislative, administrative and policy frameworks to ensure fair and equitable sharing of benefits</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-6-1">Number of countries that have adopted legislative, administrative and policy frameworks to ensure fair and equitable sharing of benefits</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -545,7 +545,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.7.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-7-1">Proportion of traded wildlife that was poached or illicitly trafficked</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-7-1">Proportion of traded wildlife that was poached or illicitly trafficked</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -577,7 +577,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.8.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-8-1">Proportion of countries adopting relevant national legislation and adequately resourcing the prevention or control of invasive alien species</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-8-1">Proportion of countries adopting relevant national legislation and adequately resourcing the prevention or control of invasive alien species</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -609,7 +609,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.9.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-9-1">Progress towards national targets established in accordance with Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011–2020</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-9-1">Progress towards national targets established in accordance with Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011–2020</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -641,7 +641,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.a.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-a-1">Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-a-1">Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -673,7 +673,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.b.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-b-1">Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-b-1">Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -705,7 +705,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 15.c.1</span>
             </h4>
-            <span class="indicator-name"><a href="/open-sdg-simple-starter/15-c-1">Proportion of traded wildlife that was poached or illicitly trafficked</a></span>
+            <span class="indicator-name"><a href="/ods-municipios-andalucia/15-c-1">Proportion of traded wildlife that was poached or illicitly trafficked</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -729,7 +729,7 @@ var translations = {
             
               <li>
                 
-                  <a href="mailto:my-email-address@example.com" target="_blank">Contact us</a>
+                  <a href="mailto:informacion.ieca@juntadeandalucia.es" target="_blank">Contact us</a>
                 
                 </li>
               <li>
@@ -743,7 +743,7 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/open-sdg-simple-starter/about/cookies-and-privacy/">Cookies</a>
+                <a href="/ods-municipios-andalucia/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
@@ -780,12 +780,12 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/open-sdg-simple-starter/assets/js/sdg.js?v=20210714063240'></script>
+<script src='/ods-municipios-andalucia/assets/js/sdg.js?v=20210714072333'></script>
 
 
     
     
-    <script src="/open-sdg-simple-starter/assets/js/custom.js?v=20210714063240"></script><script>
+    <script src="/ods-municipios-andalucia/assets/js/custom.js?v=20210714072333"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
