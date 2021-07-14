@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: '/ods-municipios-andalucia/en',
+  remoteDataBaseUrl: '/ods-municipios-andalucia/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'en',
+  language: 'es',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -103,7 +103,7 @@ var translations = {
         ================================================== -->
 
         
-    <title>Goal 10 - Reduced inequalities - Indicators For The Sustainable Development Goals</title>
+    <title>Meta 10 - Reducción de las Desigualdades - Indicators For The Sustainable Development Goals</title>
 
 
 
@@ -133,7 +133,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-municipios-andalucia/assets/css/style.css?v=20210714080334">
+        <link rel="stylesheet" href="/ods-municipios-andalucia/assets/css/style.css?v=20210714080837">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -144,19 +144,19 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-en layout-goal-by-target-vertical">
+<body class="language-es layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo","toggle_menu":"Menú de alternancia. Haga clic para ampliar o reducir el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:informacion.ieca@juntadeandalucia.es">feedback</a>.
+    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:informacion.ieca@juntadeandalucia.es">comentarios</a>.
   </div>
 </div>
 
@@ -167,7 +167,7 @@ var translations = {
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/ods-municipios-andalucia/" id="home">
-    <img src="/ods-municipios-andalucia/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <img src="/ods-municipios-andalucia/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
@@ -176,9 +176,9 @@ var translations = {
     <div class="search-and-desktop-widgets">
       <div id="search" class="menu-target">
   <form action="/ods-municipios-andalucia/search">
-    <label class="sr-only" for="indicator_search">Search</label>
-    <input type="text" name="q" id="indicator_search" title="Search" /><!--
-    --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search">Buscar</label>
+    <input type="text" name="q" id="indicator_search" title="Buscar" /><!--
+    --><button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -190,39 +190,39 @@ var translations = {
     <div class="navbar navbar-default menu-without-widgets" id="main-nav">
       <ul class="top-level">
     <li id="menuToggle"
-        aria-label="Menu toggle. Click to expand or collapse the menu."
+        aria-label="Menú de alternancia. Haga clic para ampliar o reducir el menú."
         aria-haspopup="true">
-        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+        <button data-target="menu-mobile" aria-expanded="false">Menú</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/ods-municipios-andalucia/goals">Goals</a>
+    <a href="/ods-municipios-andalucia/goals">Metas</a>
 </li><li class="nav-link ">
-    <a href="/ods-municipios-andalucia/reporting-status">Reporting Status</a>
+    <a href="/ods-municipios-andalucia/reporting-status">Estado de informes</a>
 </li><li class="nav-link ">
-    <a href="/ods-municipios-andalucia/about">About</a>
+    <a href="/ods-municipios-andalucia/about">Acerca de</a>
 </li>
 </ul>
 
     </li>
     <li id="searchToggle"
-        aria-label="Search toggle. Click to expand or collapse the search bar."
+        aria-label="Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."
         aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Search</button>
+        <button data-target="search-mobile" aria-expanded="false">Buscar</button>
         <div id="search-mobile" class="menu-target">
   <form action="/ods-municipios-andalucia/search">
-    <label class="sr-only" for="indicator_search-mobile">Search</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
-    --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" /><!--
+    --><button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
     </li>
 </ul>
       <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
-    <a href="/ods-municipios-andalucia/goals">Goals</a>
+    <a href="/ods-municipios-andalucia/goals">Metas</a>
 </li><li class="nav-link ">
-    <a href="/ods-municipios-andalucia/reporting-status">Reporting Status</a>
+    <a href="/ods-municipios-andalucia/reporting-status">Estado de informes</a>
 </li><li class="nav-link ">
-    <a href="/ods-municipios-andalucia/about">About</a>
+    <a href="/ods-municipios-andalucia/about">Acerca de</a>
 </li>
 </ul>
 
@@ -239,8 +239,8 @@ var translations = {
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/ods-municipios-andalucia/">Home</a></li>
-  <li><a href="/ods-municipios-andalucia/goals">Goals</a></li>
+  <li><a href="/ods-municipios-andalucia/">Inicio</a></li>
+  <li><a href="/ods-municipios-andalucia/goals">Objetivos</a></li>
   
   
 </ol>
@@ -252,11 +252,11 @@ var translations = {
   <div class="container">
     <div class="row">
       <div class="col-xs-4 col-md-3 col-lg-2 goal-tiles">
-        <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/10.png" alt="Reduced inequalities - Goal 10" id="goal-10" class="goal-icon-image goal-icon-image-" />
+        <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/es/10.png" alt="Reducción de las Desigualdades - Meta 10" id="goal-10" class="goal-icon-image goal-icon-image-" />
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10">
         <h1>
-          <span class="hidden-sm hidden-md hidden-lg">Goal 10: </span>Reduce inequality within and among countries
+          <span class="hidden-sm hidden-md hidden-lg">Meta 10: </span>Reducir la desigualdad en los países y entre ellos
         </h1>
       </div>
     </div>
@@ -270,16 +270,16 @@ var translations = {
 
 
   <div class="container">
-    <h2>Targets and indicators</h2>
+    <h2>Objetivos e indicadores</h2>
 
     
     
       
       <div class="row no-gutters goal-target-and-indicators">
         <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 10.2</span>
+          <span class="target-number"><span class="sr-only">Objetivo</span> 10.2</span>
         </h3>
-        <span class="target-name">By 2030, empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status</span>
+        <span class="target-name">De aquí a 2030, potenciar y promover la inclusión social, económica y política de todas las personas, independientemente de su edad, sexo, discapacidad, raza, etnia, origen, religión o situación económica u otra condición</span>
         
 
           
@@ -293,12 +293,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 10.2.1</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 10.2.1</span>
             </h4>
             <span class="indicator-name"><a href="/ods-municipios-andalucia/10-2-1">Población extranjera</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="sr-only">Estado del indicador</span>
             <span class="status complete">
-              Reported online
+              Reportado en línea
             </span>
             
 
@@ -316,12 +316,12 @@ var translations = {
 
           <div class="goal-indicator">
             <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 10.2.2</span>
+              <span class="indicator-number"><span class="sr-only">Indicador</span> 10.2.2</span>
             </h4>
             <span class="indicator-name"><a href="/ods-municipios-andalucia/10-2-2">Concentración residencial de la población extranjera</a></span>
-            <span class="sr-only">Indicator status</span>
+            <span class="sr-only">Estado del indicador</span>
             <span class="status complete">
-              Reported online
+              Reportado en línea
             </span>
             
 
@@ -338,11 +338,11 @@ var translations = {
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
               <li>
                 
-                  <a href="mailto:informacion.ieca@juntadeandalucia.es" target="_blank">Contact us</a>
+                  <a href="mailto:informacion.ieca@juntadeandalucia.es" target="_blank">Contáctenos</a>
                 
                 </li>
               <li>
@@ -378,17 +378,17 @@ var translations = {
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'ocultar';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Buscar';</script>
 
-<script src='/ods-municipios-andalucia/assets/js/sdg.js?v=20210714080334'></script>
+<script src='/ods-municipios-andalucia/assets/js/sdg.js?v=20210714080837'></script>
 
 
     
     
-    <script src="/ods-municipios-andalucia/assets/js/custom.js?v=20210714080334"></script><script>
+    <script src="/ods-municipios-andalucia/assets/js/custom.js?v=20210714080837"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
     <head>
         <meta charset="utf-8">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: '/ods-municipios-andalucia/en',
+  remoteDataBaseUrl: '/ods-municipios-andalucia/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -38,7 +38,7 @@ var opensdg = {
     this.dataDisplayAlterations.push(callback);
   },
 
-  language: 'en',
+  language: 'es',
 };
 
 // For backwards compatibility, some of these might need to be global.
@@ -105,7 +105,7 @@ var translations = {
         
     <title>
         
-        Indicator 8.3.1 -
+        Indicador 8.3.1 -
         
         Tasa de desempleo - Indicators For The Sustainable Development Goals
     </title>
@@ -138,7 +138,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/ods-municipios-andalucia/assets/css/style.css?v=20210714080334">
+        <link rel="stylesheet" href="/ods-municipios-andalucia/assets/css/style.css?v=20210714080837">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -149,19 +149,19 @@ var translations = {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@2.9.7/dist/leaflet-search.min.css" crossorigin=""><!-- ShareThis BEGIN --><!-- ShareThis END -->
 
     </head>
-<body class="language-en layout-indicator">
+<body class="language-es layout-indicator">
 <!-- <div class="container"> -->
 
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
+<script>translations['header'] = {"alpha":"Alfa","default_contrast":"estándar contraste","disable_high_contrast":"Desactivar alto contraste","disclaimer":"Este es un sitio web de desarrollo. Agradecemos sus <a href=\"mailto:%email_address\">comentarios</a>.","enable_high_contrast":"Habilitar alto contraste","high_contrast":"alto contraste","skip_link":"Saltar al contenido principal","tag_line":"17 Metas para transformar nuestro mundo","toggle_menu":"Menú de alternancia. Haga clic para ampliar o reducir el menú.","toggle_search":"Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."};</script>
 
-<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
+<a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Saltar al contenido principal</a>
 <div id="disclaimer">
   <div class="container">
   <div class="disclaimer-alert">
-    <strong class="phase-tag">Alpha</strong>
+    <strong class="phase-tag">Alfa</strong>
     
-    This is a development website. We welcome your <a href="mailto:informacion.ieca@juntadeandalucia.es">feedback</a>.
+    Este es un sitio web de desarrollo. Agradecemos sus <a href="mailto:informacion.ieca@juntadeandalucia.es">comentarios</a>.
   </div>
 </div>
 
@@ -172,7 +172,7 @@ var translations = {
 
     <div class="logo-and-mobile-widgets">
       <a class="navbar-brand" href="/ods-municipios-andalucia/" id="home">
-    <img src="/ods-municipios-andalucia/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+    <img src="/ods-municipios-andalucia/assets/img/SDG_logo.png" alt="Objetivos de Desarrollo Sostenible - 17 Metas para transformar nuestro mundo" />
 </a>
       <div class="mobile-widgets">
     <ul id='accessibility-nav' class='contrast-switcher'></ul></div>
@@ -181,9 +181,9 @@ var translations = {
     <div class="search-and-desktop-widgets">
       <div id="search" class="menu-target">
   <form action="/ods-municipios-andalucia/search">
-    <label class="sr-only" for="indicator_search">Search</label>
-    <input type="text" name="q" id="indicator_search" title="Search" /><!--
-    --><button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search">Buscar</label>
+    <input type="text" name="q" id="indicator_search" title="Buscar" /><!--
+    --><button aria-label="Buscar" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
@@ -195,39 +195,39 @@ var translations = {
     <div class="navbar navbar-default menu-without-widgets" id="main-nav">
       <ul class="top-level">
     <li id="menuToggle"
-        aria-label="Menu toggle. Click to expand or collapse the menu."
+        aria-label="Menú de alternancia. Haga clic para ampliar o reducir el menú."
         aria-haspopup="true">
-        <button data-target="menu-mobile" aria-expanded="false">Menu</button>
+        <button data-target="menu-mobile" aria-expanded="false">Menú</button>
         <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/ods-municipios-andalucia/goals">Goals</a>
+    <a href="/ods-municipios-andalucia/goals">Metas</a>
 </li><li class="nav-link ">
-    <a href="/ods-municipios-andalucia/reporting-status">Reporting Status</a>
+    <a href="/ods-municipios-andalucia/reporting-status">Estado de informes</a>
 </li><li class="nav-link ">
-    <a href="/ods-municipios-andalucia/about">About</a>
+    <a href="/ods-municipios-andalucia/about">Acerca de</a>
 </li>
 </ul>
 
     </li>
     <li id="searchToggle"
-        aria-label="Search toggle. Click to expand or collapse the search bar."
+        aria-label="Barra de búsqueda. Haga clic para ampliar o reducir la barra de búsqueda."
         aria-haspopup="true">
-        <button data-target="search-mobile" aria-expanded="false">Search</button>
+        <button data-target="search-mobile" aria-expanded="false">Buscar</button>
         <div id="search-mobile" class="menu-target">
   <form action="/ods-municipios-andalucia/search">
-    <label class="sr-only" for="indicator_search-mobile">Search</label>
-    <input type="text" name="q" id="indicator_search-mobile" title="Search" /><!--
-    --><button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
+    <label class="sr-only" for="indicator_search-mobile">Buscar</label>
+    <input type="text" name="q" id="indicator_search-mobile" title="Buscar" /><!--
+    --><button aria-label="Buscar" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
   </form>
 </div>
 
     </li>
 </ul>
       <ul class="nav navbar-nav menu-target " id="menu"><li class="nav-link ">
-    <a href="/ods-municipios-andalucia/goals">Goals</a>
+    <a href="/ods-municipios-andalucia/goals">Metas</a>
 </li><li class="nav-link ">
-    <a href="/ods-municipios-andalucia/reporting-status">Reporting Status</a>
+    <a href="/ods-municipios-andalucia/reporting-status">Estado de informes</a>
 </li><li class="nav-link ">
-    <a href="/ods-municipios-andalucia/about">About</a>
+    <a href="/ods-municipios-andalucia/about">Acerca de</a>
 </li>
 </ul>
 
@@ -251,7 +251,7 @@ var translations = {
       >
         <% if(allowedFields.indexOf(fieldItem.field) == -1) { %><h6><% } else { %><h5><% } %>
           <span aria-hidden="true"><%=translations.t(fieldItem.label)%><i class="fa fa-chevron-down"></i></span>
-          <span class="sr-only">Show sub-categories: <%=translations.t(fieldItem.label)%></span>
+          <span class="sr-only">Mostrar subcategorías: <%=translations.t(fieldItem.label)%></span>
         <% if(allowedFields.indexOf(fieldItem.field) == -1) { %></h6><% } else { %></h5><% } %>
       </button>
       <div class="bar">
@@ -259,10 +259,10 @@ var translations = {
       </div>
       <div class="variable-options">
         <fieldset>
-          <legend class="sr-only">Sub-categories - <%=translations.t(fieldItem.field)%></legend>
+          <legend class="sr-only">Subcategorías - <%=translations.t(fieldItem.field)%></legend>
           <div>
-            <button data-type="select">Select all</button>
-            <button data-type="clear">Clear all</button>
+            <button data-type="select">Seleccionar todo</button>
+            <button data-type="clear">Limpiar todo</button>
           </div>
           <% _.each(fieldItem.values, function(item) { %>
             <label>
@@ -273,10 +273,10 @@ var translations = {
       </div>
 
       <% if(allowedFields.indexOf(fieldItem.field) == -1) { %>
-        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Available when '<%= translations.t(_.find(edges, { To: fieldItem.field }).From) %>' is selected
+        <div class="variable-hint" id="variable-hint-<%=fieldItem.field.replace(/ /g, '-')%>">Disponible cuando se selecciona «<%= translations.t(_.find(edges, { To: fieldItem.field }).From) %>»
         </div>
         <div class="no-data-hint" id="no-data-hint-<%=fieldItem.field.replace(/ /g, '-')%>">
-          No options available because of filters above
+          No hay opciones disponibles debido a los filtros anteriores
         </div>
       <% }%>
 
@@ -286,9 +286,9 @@ var translations = {
 
 <script type="text/template" id="units_template">
   <% if(units.length) { %>
-    <h4>Unit of Measurement</h4>
+    <h4>Unidad de medida</h4>
     <fieldset>
-      <legend class="sr-only">Unit of Measurement</legend>
+      <legend class="sr-only">Unidad de medida</legend>
       <% _.each(units, function(unitsItem, index) { %>
         <% var checked = (selectedUnit) ? (selectedUnit==unitsItem) : (index==0); %>
         <label><input type="radio" name="unit" value="<%=unitsItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(unitsItem)%></label>
@@ -299,9 +299,9 @@ var translations = {
 
 <script type="text/template" id="series_template">
   <% if(serieses.length) { %>
-    <h4>Series</h4>
+    <h4>Serie</h4>
     <fieldset>
-      <legend class="sr-only">Series</legend>
+      <legend class="sr-only">Serie</legend>
       <% _.each(serieses, function(seriesItem, index) { %>
         <% var checked = (selectedSeries) ? (selectedSeries==seriesItem) : (index==0); %>
         <label><input type="radio" name="series" value="<%=seriesItem%>" tabindex=0 <%=checked ? 'checked' : ''%> /> <%=translations.t(seriesItem)%></label>
@@ -310,7 +310,7 @@ var translations = {
   <% } %>
 </script>
 
-<script>translations['indicator'] = {"annotation_2030_target":"2030 Target","announce_data_added":"Chart and table updated to include data.","announce_data_not_available":"Chart and table shows no data.","announce_data_removed":"Chart and table updated to exclude data.","chart":"Chart","chart_annotation":"Chart annotation","clear_all":"Clear all","clear_selections":"Clear selections","data_keyboard_navigation":"Press enter to browse data points with left and right arrow keys.","data_not_available":"This data is not available. Please choose alternative data to display.","data_tabular_alternative":"For tabular data alternative see Table tab.","dataset_size_warning":"There are too many datasets to show on the chart. Not all will be shown until you remove some selections.","download_chart":"Download Chart CSV","download_chart_image":"Download Chart Image","download_chart_image_title":"Download chart as image","download_csv":"Download CSV","download_csv_title":"Download as CSV","download_geojson":"Download GeoJSON","download_geojson_title":"Download as GeoJSON","download_headline":"Download Headline CSV","download_headline_title":"Download headline data as CSV","download_source":"Download Source CSV","download_source_sdmx":"Download Source SDMX","download_source_sdmx_title":"Download source data as SDMX","download_source_title":"Download source data as CSV","download_table":"Download Table CSV","edit":"Edit","edit_configuration":"Edit Configuration","edit_data":"Edit Data","edit_metadata":"Edit Metadata","footnote":"Footnote","geographical_area":"Geographical Area","global_metadata":"Global Metadata","global_metadata_blurb":"This table provides information on metadata for SDG indicators as defined by the UN Statistical Commission. <a href=\"https://unstats.un.org/sdgs/metadata/\">Complete global metadata</a> is provided by the UN Statistics Division.","legend_help":"Click on the legend to remove individual lines from the chart.","loading":"Loading","loading_map":"Loading map","map":"Map","map_search":"Search","map_search_hide":"Hide search","map_search_show":"Show search","map_year_slider":"Year slider","national_metadata":"National Metadata","national_metadata_blurb":"This table provides metadata for the actual indicator available from %country_name statistics closest to the corresponding global SDG indicator. Please note that even when the global SDG indicator is fully available from %country_adjective statistics, this table should be consulted for information on national methodology and other %country_adjective-specific metadata information.","next":"Next indicator","no_data_hint":"No options available because of filters above","plot_legend_description":"Plot legend: list of lines included in chart","previous":"Previous indicator","select_all":"Select all","series":"Series","series_help":"Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.","source":"Source","sources":"Sources","status":"Indicator status","sub_categories":"Sub-categories","sub_categories_show":"Show sub-categories:","table":"Table","table_column_sort":"Click to sort by this column","tags":"Tags","unit":"Unit","unit_of_measurement":"Unit of Measurement","units_type":"Units type","variable_hint":"Available when '%field' is selected","view_indicator_list":"View this goal's indicator list"};</script>
+<script>translations['indicator'] = {"annotation_2030_target":"Objetivo 2030","announce_data_added":"Gráfico y tabla actualizados para incluir los datos.","announce_data_not_available":"El gráfico y la tabla no muestran datos.","announce_data_removed":"Gráfico y tabla actualizados para excluir los datos.","chart":"Gráfico","chart_annotation":"Anotación en el gráfico","clear_all":"Limpiar todo","clear_selections":"Borrar selecciones","data_keyboard_navigation":"Pulse Enter para navegar por los puntos de datos con las teclas de flecha izquierda y derecha.","data_not_available":"Esta información no está disponible. Elija datos alternativos para mostrar.","data_tabular_alternative":"Para la alternativa de datos tabulares, véase la pestaña Tabla.","dataset_size_warning":"Hay demasiados conjuntos de datos para mostrar en el gráfico. No todo se mostrará hasta que elimine algunas selecciones.","download_chart":"Descargar CSV de gráfico","download_chart_image":"Descargar imagen del gráfico","download_chart_image_title":"Descargar gráfico como imagen","download_csv":"Descargar CSV","download_csv_title":"Descargar como CSV","download_geojson":"Descargar GeoJSON","download_geojson_title":"Descargar como GeoJSON","download_headline":"Descargar CSV global","download_headline_title":"Descargar datos globales como CSV","download_source":"Descargar CSV fuente","download_source_sdmx":"Descargar SDMX fuente","download_source_sdmx_title":"Descargar los datos fuente como SDMX","download_source_title":"Descargar los datos fuente como CSV","download_table":"Descargar la tabla CSV","edit":"Editar","edit_configuration":"Editar la configuración","edit_data":"Editar datos","edit_metadata":"Editar metadatos","footnote":"Nota","geographical_area":"Área geográfica","global_metadata":"Metadatos globales","global_metadata_blurb":"Esta tabla proporciona información sobre los metadatos para los indicadores de los ODS tal como los define la Comisión de Estadística de la ONU. La <a href=\"https://unstats.un.org/sdgs/metadata/\">División de Estadística de las Naciones Unidas proporciona</a> los metadatos globales completos .","legend_help":"Haga clic en la leyenda para eliminar líneas individuales del gráfico.","loading":"Cargando","loading_map":"Cargando mapa","map":"Mapa","map_search":"Buscar","map_search_hide":"ocultar búsqueda","map_search_show":"Mostrar búsqueda","map_year_slider":"Deslizador del año","national_metadata":"Metadatos nacionales","national_metadata_blurb":"Esta tabla proporciona metadatos para el indicador real disponible a partir de las estadísticas de %country_name más cercanas al correspondiente indicador global de SDG. Tenga en cuenta que incluso cuando el indicador global de ODS esté totalmente disponible a partir de las estadísticas de %country_adjective, se debe consultar esta tabla para obtener información sobre la metodología nacional y otra información de metadatos específicos de %country_adjective.","next":"Siguiente indicador","no_data_hint":"No hay opciones disponibles debido a los filtros anteriores","plot_legend_description":"Leyenda del gráfico: lista de líneas incluidas en el gráfico","previous":"Indicador anterior","select_all":"Seleccionar todo","series":"Serie","series_help":"Elija categorías de las listas desplegables a continuación para ver diferentes desgloses de los datos. Algunos no estarán disponibles hasta que se elija un nivel superior.","source":"Fuente","sources":"Fuentes","status":"Estado del indicador","sub_categories":"Subcategorías","sub_categories_show":"Mostrar subcategorías:","table":"Tabla","table_column_sort":"Haga clic para ordenar por esta columna","tags":"Etiquetas","unit":"Unidad","unit_of_measurement":"Unidad de medida","units_type":"Tipo de unidades","variable_hint":"Disponible cuando se selecciona «%field»","view_indicator_list":"Ver la lista de indicadores de este objetivo"};</script>
 
 <script>translations['data'] = null;</script>
 
@@ -319,10 +319,10 @@ var translations = {
   
 <ol class="breadcrumb">
   
-  <li><a href="/ods-municipios-andalucia/">Home</a></li>
-  <li><a href="/ods-municipios-andalucia/goals">Goals</a></li>
+  <li><a href="/ods-municipios-andalucia/">Inicio</a></li>
+  <li><a href="/ods-municipios-andalucia/goals">Objetivos</a></li>
   
-  <li><a href="/ods-municipios-andalucia/8" title="Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all">Goal 8</a></li>
+  <li><a href="/ods-municipios-andalucia/8" title="Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos">Meta 8</a></li>
   
 </ol>
 
@@ -334,8 +334,8 @@ var translations = {
     <div class="row">
       
       <div class="col-xs-4 col-md-3 col-lg-2 goal-icon goal-tiles">
-        <a href="/ods-municipios-andalucia/8" title="View this goal's indicator list">
-          <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/en/8.png" alt="Decent jobs and economic growth - Goal 8" id="goal-8" class="goal-icon-image goal-icon-image-"/>
+        <a href="/ods-municipios-andalucia/8" title="Ver la lista de indicadores de este objetivo">
+          <img src="https://open-sdg.github.io/sdg-translations/assets/img/goals/es/8.png" alt="Trabajo Decente y Crecimiento Económico - Meta 8" id="goal-8" class="goal-icon-image goal-icon-image-"/>
         </a>
       </div>
       <div class="col-xs-8 col-md-9 col-lg-10 indicator-details">
@@ -343,7 +343,7 @@ var translations = {
         <div>
           <h1>
             
-            Indicator 8.3.1
+            Indicador 8.3.1
             
             <span class="lead-copy">Tasa de desempleo</span>
           </h1>
@@ -369,7 +369,7 @@ var translations = {
   data-indicatorid='indicator_8-3-1'
   data-id="8-3-1"
   data-country="Andalucía, Términos municipales"
-  data-charttitle="Proportion of informal employment in non‐agriculture employment, by sex"
+  data-charttitle="Proporción de empleo informal en el sector no agrícola, desglosada por sexo"
   data-charttitles="[{&quot;unit&quot;:&quot;Percent&quot;,&quot;title&quot;:&quot;Porcentaje de población demandante de empleo&quot;}]"
   data-measurementunit="Porcentaje"
   data-showdata="true"
@@ -391,8 +391,8 @@ var translations = {
 <div id="units"></div>
 <div id="toolbar">
   <span id="series-help">
-    <h4>Sub-categories</h4>
-    <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
+    <h4>Subcategorías</h4>
+    <p>Elija categorías de las listas desplegables a continuación para ver diferentes desgloses de los datos. Algunos no estarán disponibles hasta que se elija un nivel superior.</p>
   </span>
   <div id="fields">
     <p class="async-loading" data-img="/ods-municipios-andalucia/assets/img/loading-small.gif"></p>
@@ -408,13 +408,13 @@ var translations = {
 
   <div id="datatables">
 
-    <a href="/ods-municipios-andalucia/en/headline/8-3-1.csv" class="btn btn-primary btn-download" download="indicator_8-3-1.csv" tabindex="0" role="button">Download Headline CSV</a>
+    <a href="/ods-municipios-andalucia/es/headline/8-3-1.csv" class="btn btn-primary btn-download" download="indicator_8-3-1.csv" tabindex="0" role="button">Descargar CSV global</a>
 
-    <a href="/ods-municipios-andalucia/en/data/8-3-1.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_8-3-1.csv' tabindex='0' role='button'>Download Source CSV</a>
+    <a href="/ods-municipios-andalucia/es/data/8-3-1.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_8-3-1.csv' tabindex='0' role='button'>Descargar CSV fuente</a>
 
     <h3>Headline data</h3>
     <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Proportion of informal employment in non‐agriculture employment, by sex</caption>
+      <caption>Proporción de empleo informal en el sector no agrícola, desglosada por sexo</caption>
       <thead>
         
       </thead>
@@ -427,10 +427,10 @@ var translations = {
   <div id="datatableFooter">
     
     
-    <p>Geographical Area: Andalucía, Términos municipales</p>
+    <p>Área geográfica: Andalucía, Términos municipales</p>
     
     
-    <p>Unit of Measurement: Porcentaje</p>
+    <p>Unidad de medida: Porcentaje</p>
     
     
   </div>
@@ -445,7 +445,7 @@ var translations = {
   <div class="async-loaded spacer medium" style="display:none;">
 
     <div style="display: none;">
-  <span id="table-alternative">For tabular data alternative see Table tab.</span>
+  <span id="table-alternative">Para la alternativa de datos tabulares, véase la pestaña Tabla.</span>
 </div>
 <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
   <li role="presentation" class="nav-item active">
@@ -453,14 +453,14 @@ var translations = {
 data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Chart tab"
- aria-describedby="table-alternative">Chart</a>
+ aria-describedby="table-alternative">Gráfico</a>
   </li>
   <li role="presentation" class="nav-item">
     <a class="nav-link" data-toggle="tab" id="tab-tableview" href="#tableview" aria-controls="tableview" role="tab" data-on="click"
 data-event-category="Tab change"
 data-event-action="Change data view"
 data-event-label="Change to Table tab"
->Table</a>
+>Tabla</a>
   </li></ul>
 
     <div class="tab-content data-view">
@@ -468,8 +468,8 @@ data-event-label="Change to Table tab"
     
 
     <div id="dataset-size-warning" style="display:none" role="alert">
-      <i class="fa fa-bolt"><span class="sr-only">Warning:</span></i>
-      There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
+      <i class="fa fa-bolt"><span class="sr-only">Aviso:</span></i>
+      Hay demasiados conjuntos de datos para mostrar en el gráfico. No todo se mostrará hasta que elimine algunas selecciones.
     </div>
 
     
@@ -707,12 +707,12 @@ opensdg.chartConfigAlter(function(config, info) {
         
 
         
-        <dt>Geographical Area:</dt>
+        <dt>Área geográfica:</dt>
         <dd>Andalucía, Términos municipales</dd>
         
 
         
-        <dt>Unit of Measurement:</dt>
+        <dt>Unidad de medida:</dt>
         <dd>Porcentaje</dd>
         
 
@@ -725,8 +725,8 @@ opensdg.chartConfigAlter(function(config, info) {
         </div>
       </figure>
       <div id="chartSelectionDownload" class="clearfix">
-        <button id="btnSave" title="Download chart as image" class='btn btn-primary btn-download'>
-          Download Chart Image
+        <button id="btnSave" title="Descargar gráfico como imagen" class='btn btn-primary btn-download'>
+          Descargar imagen del gráfico
         </button>
       </div>
     </div>
@@ -736,7 +736,7 @@ opensdg.chartConfigAlter(function(config, info) {
   </div>
   <div role="tabpanel" class="tab-pane" id="tableview">
     <div style="display: none;">
-      <span id="column-sort-info">Click to sort by this column</span>
+      <span id="column-sort-info">Haga clic para ordenar por esta columna</span>
     </div>
     <div id="selectionsTable"></div>
 
@@ -749,12 +749,12 @@ opensdg.chartConfigAlter(function(config, info) {
         
 
         
-        <dt>Geographical Area:</dt>
+        <dt>Área geográfica:</dt>
         <dd>Andalucía, Términos municipales</dd>
         
 
         
-        <dt>Unit of Measurement:</dt>
+        <dt>Unidad de medida:</dt>
         <dd>Porcentaje</dd>
         
 
@@ -791,13 +791,13 @@ opensdg.chartConfigAlter(function(config, info) {
 data-event-category="Tab change"
 data-event-action="Change metadata view"
 data-event-label="Change to my-custom-translations.national_metadata tab"
->my-custom-translations.national_metadata</a>
+>Metadatos del proyecto</a>
   </li>
 
 
   
   <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Edit</a>
+    <a class="nav-link" data-toggle="tab" href="#edit" aria-controls="edit" role="tab">Editar</a>
   </li>
   
 </ul>
@@ -834,7 +834,7 @@ data-event-label="Change to my-custom-translations.national_metadata tab"
       
       
       <tr>
-        <th scope="row">Indicator description </th>
+        <th scope="row">Descripción del indicador </th>
         <td>
           
             <p>Tasa de desempleo</p>
@@ -848,7 +848,7 @@ data-event-label="Change to my-custom-translations.national_metadata tab"
       
       
       <tr>
-        <th scope="row">Geographical coverage </th>
+        <th scope="row">Cobertura geográfica </th>
         <td>
           
             <p>Andalucía, Términos municipales</p>
@@ -862,7 +862,7 @@ data-event-label="Change to my-custom-translations.national_metadata tab"
       
       
       <tr>
-        <th scope="row">Unit of measurement </th>
+        <th scope="row">Unidad de medida </th>
         <td>
           
             <p>Porcentaje</p>
@@ -876,7 +876,7 @@ data-event-label="Change to my-custom-translations.national_metadata tab"
       
       
       <tr>
-        <th scope="row">Definitions </th>
+        <th scope="row">Definiciones </th>
         <td>
           
             <p>Porcentaje de población residente en un municipio registrada como demandante de empleo no ocupada sobre el total de población registrada como demandante de empleo o afiliada en ese municipio.</p>
@@ -890,7 +890,7 @@ data-event-label="Change to my-custom-translations.national_metadata tab"
       
       
       <tr>
-        <th scope="row">Data last updated </th>
+        <th scope="row">Datos actualizados por última vez </th>
         <td>
           
             
@@ -900,7 +900,7 @@ data-event-label="Change to my-custom-translations.national_metadata tab"
 
             
               <a href="https://github.com/ods-municipios-andalucia/ods-municipios-andalucia/commit/1478e365d3528d98d30fc2f6066e46836e56c94a" target="_blank">
-                2021-07-14: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+                2021-07-14: see changes on GitHub <span class="visuallyhidden">Se abre en una nueva ventana</span>
               </a>
             
 
@@ -917,7 +917,7 @@ data-event-label="Change to my-custom-translations.national_metadata tab"
       
       
       <tr>
-        <th scope="row">Metadata last updated </th>
+        <th scope="row">Metadatos actualizados por última vez </th>
         <td>
           
             
@@ -927,7 +927,7 @@ data-event-label="Change to my-custom-translations.national_metadata tab"
 
             
               <a href="https://github.com/ods-municipios-andalucia/ods-municipios-andalucia/commit/1478e365d3528d98d30fc2f6066e46836e56c94a" target="_blank">
-                2021-07-14: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+                2021-07-14: see changes on GitHub <span class="visuallyhidden">Se abre en una nueva ventana</span>
               </a>
             
 
@@ -1037,11 +1037,11 @@ data-event-label="Change to my-custom-translations.national_metadata tab"
   
 
 
-  <a class="btn btn-primary" href="http://prose.io/#ods-municipios-andalucia/ods-municipios-andalucia/edit/develop/data/indicator_8-3-1.csv">Edit Data</a>
+  <a class="btn btn-primary" href="http://prose.io/#ods-municipios-andalucia/ods-municipios-andalucia/edit/develop/data/indicator_8-3-1.csv">Editar datos</a>
   
 
   
-  <a class="btn btn-primary" href="http://prose.io/#ods-municipios-andalucia/ods-municipios-andalucia/edit/develop/meta/8-3-1.md">Edit Metadata</a>
+  <a class="btn btn-primary" href="http://prose.io/#ods-municipios-andalucia/ods-municipios-andalucia/edit/develop/meta/8-3-1.md">Editar metadatos</a>
   
 
   
@@ -1063,11 +1063,11 @@ data-event-label="Change to my-custom-translations.national_metadata tab"
       <div class="col-xs-12">
         <div id="footerLinks">
           <ul>
-            <li><a href="https://open-sdg.org">Built using Open SDG</a></li>
+            <li><a href="https://open-sdg.org">Construido usando Open SDG</a></li>
             
               <li>
                 
-                  <a href="mailto:informacion.ieca@juntadeandalucia.es" target="_blank">Contact us</a>
+                  <a href="mailto:informacion.ieca@juntadeandalucia.es" target="_blank">Contáctenos</a>
                 
                 </li>
               <li>
@@ -1103,17 +1103,17 @@ data-event-label="Change to my-custom-translations.national_metadata tab"
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.3/dist/html2canvas.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.2/dist/FileSaver.min.js"></script>
 <script>translations['general'] = translations['general'] || {};
-    translations['general']['hide'] = 'hide';</script>
+    translations['general']['hide'] = 'ocultar';</script>
 
 <script>translations['search'] = translations['search'] || {};
-    translations['search']['search'] = 'Search';</script>
+    translations['search']['search'] = 'Buscar';</script>
 
-<script src='/ods-municipios-andalucia/assets/js/sdg.js?v=20210714080334'></script>
+<script src='/ods-municipios-andalucia/assets/js/sdg.js?v=20210714080837'></script>
 
 
     
     
-    <script src="/ods-municipios-andalucia/assets/js/custom.js?v=20210714080334"></script><script>
+    <script src="/ods-municipios-andalucia/assets/js/custom.js?v=20210714080837"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
