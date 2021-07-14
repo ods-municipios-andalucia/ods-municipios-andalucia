@@ -188,7 +188,7 @@ map_layers:
   - min_zoom: 5
     max_zoom: 18
     subfolder: regions
-    label: My map layer label (can be a translation key)
+    label: my-custom-translations.map
 
 # Recommend accessibility improvements.
 accessible_tabs: true
