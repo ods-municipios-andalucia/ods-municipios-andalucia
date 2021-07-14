@@ -94,9 +94,7 @@ reporting_status_extra_fields: []
 # Note that the GeoJSON files can either be remote (as in the example below) or
 # local, relative to the src_dir specified above.
 map_layers:
-  -
-    geojson_file: ./geojson/terminos_municipales.geojson
-    #geojson_file: https://emiliopardo.github.io/open-sdg-simple-test/assets/maps/terminos_municipales.geojson
+  - geojson_file: terminos_municipales.geojson
     name_property: municipio
     id_property: codmun
     output_subfolder: regions
