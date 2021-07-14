@@ -1,1 +1,4 @@
 From,To
+Variable,Grado urbanización
+Grado urbanización,Provincia
+Provincia,Municipio
