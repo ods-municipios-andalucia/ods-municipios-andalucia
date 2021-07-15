@@ -156,7 +156,7 @@ map_options:
   minZoom: 5
   tileURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
   tileOptions:
-    attribution: '<a href="https://www.juntadeandalucia.es/institutodeestadisticaycartografia/">Instituto de Estadística y Cartografía de Andalucía</a>'
+    attribution: '<a href="https://www.juntadeandalucia.es/institutodeestadisticaycartografia/" target="_blank">Instituto de Estadística y Cartografía de Andalucía</a>'
   # Control the choropleth color range. See https://gka.github.io/chroma.js/#chroma-brewer
   # colorRange: chroma.brewer.YlGnBu
   colorRange: ["#F6E8EC", "#E3BAC6", "#D18CA1", "#BE5E7B", "#AB3055", "#A21942", "#821435", "#610F28", "#410A1A", "#20050D"]
