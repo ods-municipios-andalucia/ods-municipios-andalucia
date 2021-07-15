@@ -186,10 +186,10 @@ map_options:
     dashArray: 5,5    
     
 map_layers:
-  - min_zoom: 5
-    max_zoom: 18
-    subfolder: regions
-    # label: my-custom-translations.map
+  min_zoom: 5
+  max_zoom: 18
+  subfolder: regions
+  # label: my-custom-translations.map
 
 # Recommend accessibility improvements.
 accessible_tabs: true
