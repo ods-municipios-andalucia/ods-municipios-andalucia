@@ -159,7 +159,8 @@ map_options:
     attribution: 'My map attribution'
   # Control the choropleth color range. See https://gka.github.io/chroma.js/#chroma-brewer
   # colorRange: chroma.brewer.YlGnBu
-  colorRange: ["#F6E8EC", "#E3BAC6", "#D18CA1", "#BE5E7B", "#AB3055", "#A21942", "#821435", "#610F28", "#410A1A", "#20050D"]
+  # colorRange: ["#F6E8EC", "#E3BAC6", "#D18CA1", "#BE5E7B", "#AB3055", "#A21942", "#821435", "#610F28", "#410A1A", "#20050D"]
+  colorRange: ["#f6ff70", "#d0ef8e", "#abdead", "#81ceba", "#56bec1", "#3caac2", "#3391bc", "#2b77b4", "#2855a4", "#253494"]
   # Set the color for boundaries that have no data.
   noValueColor: #f0f0f0
   # For documentation on the style options below, see here:
@@ -169,19 +170,19 @@ map_options:
     weight: 1
     opacity: 1
     color: #888888
-    fillOpacity: 0.8
+    fillOpacity: 0.9
   # Set the style for boundaries that have been selected/highlighted:
   styleHighlighted:
     weight: 1
     opacity: 1
     color: #111111
-    fillOpacity: 0.
+    fillOpacity: 0.9
   # Set the style for top-level boundaries that are displaying in other layers.
   # Note: This is only applicable when using the "nested zoom" feature (see below).
   styleStatic:
     weight: 2
     opacity: 1
-    fillOpacity: 8
+    fillOpacity: 0.9
     color: #172d44
     dashArray: 5,5    
     
