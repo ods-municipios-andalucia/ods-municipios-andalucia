@@ -2617,3 +2617,12 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   border-bottom: 2px solid black; }
 .layout-config-builder.contrast-high .btn-group .btn span {
   color: black; }
+
+#disclaimer {
+  display: none !important; }
+
+#main-content #map .leaflet-bar-timecontrol {
+  display: none !important; }
+
+.lead-copy {
+  font-size: 16px !important; }
