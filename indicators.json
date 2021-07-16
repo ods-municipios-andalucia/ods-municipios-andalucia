@@ -12,6 +12,22 @@
           "keywords": "",
           "href": "/ods-municipios-andalucia/7-1-2",
           "status": "complete"
+        },
+        {
+          "id": "7-1-2a",
+          "title": "Porcentaje de viviendas construidas a partir de 1980.",
+          "description": "Porcentaje de viviendas construidas a partir de 1980",
+          "keywords": "",
+          "href": "/ods-municipios-andalucia/7-1-2a",
+          "status": "complete"
+        },
+        {
+          "id": "7-1-2b",
+          "title": "Porcentaje de viviendas construidas a partir de 2008.",
+          "description": "Porcentaje de viviendas construidas a partir de 2008",
+          "keywords": "",
+          "href": "/ods-municipios-andalucia/7-1-2b",
+          "status": "complete"
         }]
     }
   },
