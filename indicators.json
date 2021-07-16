@@ -6,14 +6,6 @@
       "indicators": [
         
         {
-          "id": "7-1-2",
-          "title": "Porcentaje de viviendas de reciente construcción",
-          "description": "Porcentaje de viviendas de reciente construcción",
-          "keywords": "",
-          "href": "/ods-municipios-andalucia/7-1-2",
-          "status": "complete"
-        },
-        {
           "id": "7-1-2-a",
           "title": "Porcentaje de viviendas construidas a partir de 1980.",
           "description": "Porcentaje de viviendas construidas a partir de 1980",
