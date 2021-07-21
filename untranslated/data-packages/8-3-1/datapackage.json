@@ -15,6 +15,18 @@
             "type": "integer"
           },
           {
+            "name": "Grado urbanización",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Ciudades",
+                "Zona de densidad intermedia",
+                "Zona rural",
+                ""
+              ]
+            }
+          },
+          {
             "name": "Municipio",
             "type": "string",
             "constraints": {
