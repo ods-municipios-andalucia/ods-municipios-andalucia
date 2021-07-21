@@ -166,20 +166,20 @@ map_options:
   # https://leafletjs.com/reference-1.4.0.html#path-option
   # Set the default style for boundaries in the map:
   styleNormal:
-    weight: 1
+    weight: 0.3
     opacity: 1
     color: "#888888"
     fillOpacity: 0.9
   # Set the style for boundaries that have been selected/highlighted:
   styleHighlighted:
-    weight: 1
+    weight: 0.3
     opacity: 1
     color: "#111111"
     fillOpacity: 0.9
   # Set the style for top-level boundaries that are displaying in other layers.
   # Note: This is only applicable when using the "nested zoom" feature (see below).
   styleStatic:
-    weight: 2
+    weight: 0.3
     opacity: 1
     fillOpacity: 0.9
     color: "#172d44"
