@@ -13,15 +13,43 @@
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/open-sdg/open-sdg-table@0.4.0/open-sdg-table.min.css">
             <style>
                 .btn-primary {
-                    background-color: #1D70B8;
-                    border-color: #1D70B8;
+                    background-color: #00703c;
+                    padding: 8px 10px 7px;
+                    border: 2px solid transparent;
+                    border-radius: 0;
+                    color: #fff;
+                    box-shadow: 0 2px 0 #002d18;
+                    text-decoration: none;
+                }
+                .btn-primary:visited {
+                    color: #fff;
+                }
+                .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active {
+                    background-color: #005a30;
+                    text-decoration: none;
+                    border: 2px solid transparent;
+                }
+                .btn-primary:focus:not(:active):not(:hover) {
+                    border-color: #fd0;
+                    color: #0b0c0c;
+                    background-color: #fd0;
+                    box-shadow: 0 2px 0 #0b0c0c;
                 }
                 a {
                     color: #1D70B8;
                     text-decoration: underline;
                 }
+                a:hover {
+                    color: #003078;
+                }
+                a:visited {
+                    color: #4c2c92;
+                }
                 .download-info {
                     margin-left: 12px;
+                }
+                .table-striped tbody tr:nth-of-type(2n+1) {
+                    background-color: #f3f2f1;
                 }
             </style>
         </head>
@@ -70,7 +98,7 @@
       <td>4</td>
     </tr>
     <tr>
-      <td><a href="disaggregation--grado-urbanización.html">Grado urbanización</a></td>
+      <td><a href="disaggregation--grado-urbanizacion.html">Grado urbanización</a></td>
       <td>3</td>
       <td>3</td>
     </tr>
@@ -84,7 +112,7 @@
             <script type="text/javascript">
             var sdgBuild = sdgBuild || {};
             sdgBuild.tables = sdgBuild.tables || {};
-            sdgBuild.tables['disaggregation-table'] = [{"Disaggregation":"<a href=\"disaggregation--dimension.html\">Dimension<\/a>","Number of indicators":3,"Number of values":4},{"Disaggregation":"<a href=\"disaggregation--grado-urbanizaci\u00f3n.html\">Grado urbanizaci\u00f3n<\/a>","Number of indicators":3,"Number of values":3},{"Disaggregation":"<a href=\"disaggregation--municipio.html\">Municipio<\/a>","Number of indicators":7,"Number of values":853}];
+            sdgBuild.tables['disaggregation-table'] = [{"Disaggregation":"<a href=\"disaggregation--dimension.html\">Dimension<\/a>","Number of indicators":3,"Number of values":4},{"Disaggregation":"<a href=\"disaggregation--grado-urbanizacion.html\">Grado urbanizaci\u00f3n<\/a>","Number of indicators":3,"Number of values":3},{"Disaggregation":"<a href=\"disaggregation--municipio.html\">Municipio<\/a>","Number of indicators":7,"Number of values":853}];
             </script>
             
         </div>
@@ -111,7 +139,7 @@
   <tbody>
     <tr>
       <td>#10-2-1</td>
-      <td><a href="disaggregation--grado-urbanización.html">Grado urbanización</a>, <a href="disaggregation--municipio.html">Municipio</a></td>
+      <td><a href="disaggregation--grado-urbanizacion.html">Grado urbanización</a>, <a href="disaggregation--municipio.html">Municipio</a></td>
       <td>2</td>
     </tr>
     <tr>
@@ -131,12 +159,12 @@
     </tr>
     <tr>
       <td>#7-1-2-a</td>
-      <td><a href="disaggregation--grado-urbanización.html">Grado urbanización</a>, <a href="disaggregation--municipio.html">Municipio</a></td>
+      <td><a href="disaggregation--grado-urbanizacion.html">Grado urbanización</a>, <a href="disaggregation--municipio.html">Municipio</a></td>
       <td>2</td>
     </tr>
     <tr>
       <td>#7-1-2-b</td>
-      <td><a href="disaggregation--grado-urbanización.html">Grado urbanización</a>, <a href="disaggregation--municipio.html">Municipio</a></td>
+      <td><a href="disaggregation--grado-urbanizacion.html">Grado urbanización</a>, <a href="disaggregation--municipio.html">Municipio</a></td>
       <td>2</td>
     </tr>
     <tr>
@@ -149,7 +177,7 @@
             <script type="text/javascript">
             var sdgBuild = sdgBuild || {};
             sdgBuild.tables = sdgBuild.tables || {};
-            sdgBuild.tables['indicator-table'] = [{"Indicator":"#10-2-1","Disaggregations":"<a href=\"disaggregation--grado-urbanizaci\u00f3n.html\">Grado urbanizaci\u00f3n<\/a>, <a href=\"disaggregation--municipio.html\">Municipio<\/a>","Number of disaggregations":2},{"Indicator":"#10-2-2","Disaggregations":"<a href=\"disaggregation--municipio.html\">Municipio<\/a>, <a href=\"disaggregation--dimension.html\">Dimension<\/a>","Number of disaggregations":2},{"Indicator":"#11-3-1","Disaggregations":"<a href=\"disaggregation--municipio.html\">Municipio<\/a>, <a href=\"disaggregation--dimension.html\">Dimension<\/a>","Number of disaggregations":2},{"Indicator":"#11-7-1","Disaggregations":"<a href=\"disaggregation--municipio.html\">Municipio<\/a>, <a href=\"disaggregation--dimension.html\">Dimension<\/a>","Number of disaggregations":2},{"Indicator":"#7-1-2-a","Disaggregations":"<a href=\"disaggregation--grado-urbanizaci\u00f3n.html\">Grado urbanizaci\u00f3n<\/a>, <a href=\"disaggregation--municipio.html\">Municipio<\/a>","Number of disaggregations":2},{"Indicator":"#7-1-2-b","Disaggregations":"<a href=\"disaggregation--grado-urbanizaci\u00f3n.html\">Grado urbanizaci\u00f3n<\/a>, <a href=\"disaggregation--municipio.html\">Municipio<\/a>","Number of disaggregations":2},{"Indicator":"#8-3-1","Disaggregations":"<a href=\"disaggregation--municipio.html\">Municipio<\/a>","Number of disaggregations":1}];
+            sdgBuild.tables['indicator-table'] = [{"Indicator":"#10-2-1","Disaggregations":"<a href=\"disaggregation--grado-urbanizacion.html\">Grado urbanizaci\u00f3n<\/a>, <a href=\"disaggregation--municipio.html\">Municipio<\/a>","Number of disaggregations":2},{"Indicator":"#10-2-2","Disaggregations":"<a href=\"disaggregation--municipio.html\">Municipio<\/a>, <a href=\"disaggregation--dimension.html\">Dimension<\/a>","Number of disaggregations":2},{"Indicator":"#11-3-1","Disaggregations":"<a href=\"disaggregation--municipio.html\">Municipio<\/a>, <a href=\"disaggregation--dimension.html\">Dimension<\/a>","Number of disaggregations":2},{"Indicator":"#11-7-1","Disaggregations":"<a href=\"disaggregation--municipio.html\">Municipio<\/a>, <a href=\"disaggregation--dimension.html\">Dimension<\/a>","Number of disaggregations":2},{"Indicator":"#7-1-2-a","Disaggregations":"<a href=\"disaggregation--grado-urbanizacion.html\">Grado urbanizaci\u00f3n<\/a>, <a href=\"disaggregation--municipio.html\">Municipio<\/a>","Number of disaggregations":2},{"Indicator":"#7-1-2-b","Disaggregations":"<a href=\"disaggregation--grado-urbanizacion.html\">Grado urbanizaci\u00f3n<\/a>, <a href=\"disaggregation--municipio.html\">Municipio<\/a>","Number of disaggregations":2},{"Indicator":"#8-3-1","Disaggregations":"<a href=\"disaggregation--municipio.html\">Municipio<\/a>","Number of disaggregations":1}];
             </script>
             
         </div>
