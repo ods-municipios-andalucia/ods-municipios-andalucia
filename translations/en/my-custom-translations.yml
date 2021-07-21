@@ -8,4 +8,5 @@ goals: Goals
 source_info: Data source
 methodology: Methodological annex
 observations: Observations
+download_data: "Download data"
 map: Download Geojson
