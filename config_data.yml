@@ -96,7 +96,7 @@ reporting_status_extra_fields: []
 map_layers:
   - geojson_file: ./geojson/terminos_municipales.geojson
     name_property: nombre
-    id_property: codmum
+    id_property: codmun
     output_subfolder: regions
     filename_prefix: indicator_
 # Documentation settings
