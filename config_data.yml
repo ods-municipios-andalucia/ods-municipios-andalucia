@@ -94,9 +94,9 @@ reporting_status_extra_fields: []
 # Note that the GeoJSON files can either be remote (as in the example below) or
 # local, relative to the src_dir specified above.
 map_layers:
-  - geojson_file: terminos_municipales.geojson
-    name_property: name
-    id_property: geocode
+  - geojson_file: ./geojson/terminos_municipales.geojson
+    name_property: nombre
+    id_property: codmum
     output_subfolder: regions
     filename_prefix: indicator_
 # Documentation settings
