@@ -166,15 +166,15 @@ prose:
       - name: "observations"
         field:
             element: text
-            label: "download data"
-            translation_key: my-custom-translations.download_data
-            scope: national    
+            label: "observations"
+            translation_key: my-custom-translations.observations
+            scope: national           
       - name: "download_data"
         field:
             element: text
-            label: "observations"
-            translation_key: my-custom-translations.observations
-            scope: national                                          
+            label: "download data"
+            translation_key: my-custom-translations.download_data
+            scope: national                                           
       - name: "national_data_update_url"
         field:
             element: hidden
