@@ -15,19 +15,6 @@
             "type": "integer"
           },
           {
-            "name": "Nacionalidad",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "UE15",
-                "Magreb",
-                "América del Sur",
-                "Otras",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Grado urbanización",
             "type": "string",
             "constraints": {
@@ -829,6 +816,19 @@
                 "Isla Mayor",
                 "Cuervo de Sevilla, El",
                 "Palmar de Troya, El",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Nacionalidad",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "UE15",
+                "Magreb",
+                "América del Sur",
+                "Otras",
                 ""
               ]
             }
