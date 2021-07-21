@@ -1,8 +1,8 @@
 "Year","Grado urbanización","Municipio","GeoCode","Value"
-2019,"Ciudades","","",6.84
-2019,"Zona de densidad intermedia","","",9.09
-2019,"Zona rural","","",7.84
-2019,"","","",7.92
+2019,"Ciudades",,,6.84
+2019,"Zona de densidad intermedia",,,9.09
+2019,"Zona rural",,,7.84
+2019,,,,7.92
 2019,"Zona rural","Abla","A04001",7.44
 2019,"Zona rural","Abrucena","A04002",6.46
 2019,"Zona de densidad intermedia","Adra","A04003",10.46
