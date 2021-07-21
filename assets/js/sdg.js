@@ -2813,7 +2813,7 @@ var mapView = function () {
     $('.map').show();
     $('#map').sdgMap({
       indicatorId: indicatorId,
-      mapOptions: {"minZoom":5,"tileURL":"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","tileOptions":{"attribution":"<a  href=\"https://www.openstreetmap.org/copyright/en\" target=\"_blank\">© OpenStreetMap</a> contributtors | <a href=\"https://www.juntadeandalucia.es/institutodeestadisticaycartografia/\" target=\"_blank\">Instituto de Estadística y Cartografía de Andalucía</a>"},"colorRange":["#F6E8EC","#E3BAC6","#D18CA1","#BE5E7B","#AB3055","#A21942","#821435","#610F28","#410A1A","#20050D"],"noValueColor":"#f0f0f0","styleNormal":{"weight":0.3,"opacity":1,"color":"#888888","fillOpacity":0.9},"styleHighlighted":{"weight":0.3,"opacity":1,"color":"#111111","fillOpacity":0.9},"styleStatic":{"weight":0.3,"opacity":1,"fillOpacity":0.9,"color":"#172d44","dashArray":55}},
+      mapOptions: {"minZoom":5,"tileURL":"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png","tileOptions":{"attribution":"<a  href=\"https://www.openstreetmap.org/copyright/en\" target=\"_blank\">© OpenStreetMap</a> contributtors | <a href=\"https://www.juntadeandalucia.es/institutodeestadisticaycartografia/\" target=\"_blank\">Instituto de Estadística y Cartografía de Andalucía</a>"},"colorRange":"chroma.brewer.YlGnBu","noValueColor":"#f0f0f0","styleNormal":{"weight":0.3,"opacity":1,"color":"#888888","fillOpacity":0.9},"styleHighlighted":{"weight":0.3,"opacity":1,"color":"#111111","fillOpacity":0.9},"styleStatic":{"weight":0.3,"opacity":1,"fillOpacity":0.9,"color":"#172d44","dashArray":55}},
       mapLayers: [{"min_zoom":5,"max_zoom":18,"subfolder":"regions"}],
       precision: precision,
       decimalSeparator: decimalSeparator,
