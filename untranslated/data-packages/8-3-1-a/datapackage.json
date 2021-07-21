@@ -1,0 +1,58 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "nacionalidad",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "ue15",
+                "mag",
+                "ams",
+                "otr",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "municipio",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Abla",
+                "Abrucena",
+                "Adra",
+                "Albanchez",
+                "Arboleas",
+                "Armuña de Almanzora",
+                "Bacares",
+                "Bayárcal",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Value",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "8-3-1-a",
+  "title": "Tasa de desempleo"
+}
