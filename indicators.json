@@ -60,6 +60,14 @@
           "keywords": "",
           "href": "/ods-municipios-andalucia/10-2-1",
           "status": "complete"
+        },
+        {
+          "id": "10-2-1-a",
+          "title": "Población extranjera",
+          "description": "Porcentaje de población extranjera residente en un municipio",
+          "keywords": "",
+          "href": "/ods-municipios-andalucia/10-2-1-a",
+          "status": "complete"
         }]
     }
   }]
