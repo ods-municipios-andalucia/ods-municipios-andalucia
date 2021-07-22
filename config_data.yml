@@ -99,6 +99,7 @@ map_layers:
     id_property: codmun
     output_subfolder: regions
     filename_prefix: indicator_
+    exclude_columns: ['Municipio']
 # Documentation settings
 # ----------------------
 # This controls the automatic documentation that is created for your build.
