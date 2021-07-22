@@ -2723,6 +2723,9 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 #disclaimer {
   display: none !important; }
 
+#main-content {
+  padding-bottom: 70px !important; }
+
 #main-content #map .leaflet-bar-timecontrol {
   display: none !important; }
 
@@ -2756,5 +2759,6 @@ footer #footerLinks > ul > li {
   margin: 3px 10px 3px 0 !important; }
 
 footer #footerLinks > ul > li:before {
+  color: #ffffff !important;
   content: "|";
   padding-right: 5px; }
