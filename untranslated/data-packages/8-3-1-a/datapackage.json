@@ -12,41 +12,11 @@
         "fields": [
           {
             "name": "Year",
-            "type": "integer"
-          },
-          {
-            "name": "nacionalidad",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "ue15",
-                "mag",
-                "ams",
-                "otr",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "municipio",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Abla",
-                "Abrucena",
-                "Adra",
-                "Albanchez",
-                "Arboleas",
-                "Armuña de Almanzora",
-                "Bacares",
-                "Bayárcal",
-                ""
-              ]
-            }
+            "type": "number"
           },
           {
             "name": "Value",
-            "type": "integer"
+            "type": "number"
           }
         ]
       }

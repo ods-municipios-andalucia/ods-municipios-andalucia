@@ -3,58 +3,6 @@
   "title": "All indicators",
   "resources": [
     {
-      "path": "8-3-1-a/data.csv",
-      "name": "8-3-1-a",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
-            "name": "nacionalidad",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "ue15",
-                "mag",
-                "ams",
-                "otr",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "municipio",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Abla",
-                "Abrucena",
-                "Adra",
-                "Albanchez",
-                "Arboleas",
-                "Armuña de Almanzora",
-                "Bacares",
-                "Bayárcal",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Value",
-            "type": "integer"
-          }
-        ]
-      },
-      "title": "Tasa de desempleo"
-    },
-    {
       "path": "10-2-1/data.csv",
       "name": "10-2-1",
       "profile": "tabular-data-resource",
@@ -1716,7 +1664,7 @@
           }
         ]
       },
-      "title": "Tasa de desempleo"
+      "title": "8-3-1"
     },
     {
       "path": "7-1-2-a/data.csv",
@@ -4226,6 +4174,28 @@
         ]
       },
       "title": "Población extranjera"
+    },
+    {
+      "path": "8-3-1-a/data.csv",
+      "name": "8-3-1-a",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "number"
+          },
+          {
+            "name": "Value",
+            "type": "number"
+          }
+        ]
+      },
+      "title": "Tasa de desempleo"
     }
   ]
 }
