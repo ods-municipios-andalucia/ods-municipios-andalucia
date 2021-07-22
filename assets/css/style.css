@@ -2735,13 +2735,10 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .footer-ods {
   background: grey url("../img/sdgbg.png") top left repeat-x !important;
   padding-top: 15px !important;
-  min-height: 100px !important;
-  max-height: 150px !important; }
+  height: auto !important; }
 
-.footer-ods-container {
-  background-color: grey !important;
-  min-height: 100px !important;
-  max-height: 150px !important; }
+.container {
+  height: auto !important; }
 
 .frontpage-cards {
   padding-bottom: 25px !important; }
