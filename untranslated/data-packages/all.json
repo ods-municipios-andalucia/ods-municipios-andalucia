@@ -3345,6 +3345,17 @@
             "type": "integer"
           },
           {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Indicador 1",
+                "Indicador 2",
+                ""
+              ]
+            }
+          },
+          {
             "name": "Grado urbanización",
             "type": "string",
             "constraints": {
