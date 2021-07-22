@@ -3345,12 +3345,14 @@
             "type": "integer"
           },
           {
-            "name": "Units",
+            "name": "Nacionalidad",
             "type": "string",
             "constraints": {
               "enum": [
-                "Indicador 1",
-                "Indicador 2",
+                "UE15",
+                "Magreb",
+                "América del Sur",
+                "Otras",
                 ""
               ]
             }
@@ -4157,19 +4159,6 @@
                 "Isla Mayor",
                 "Cuervo de Sevilla, El",
                 "Palmar de Troya, El",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Nacionalidad",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "UE15",
-                "Magreb",
-                "América del Sur",
-                "Otras",
                 ""
               ]
             }
