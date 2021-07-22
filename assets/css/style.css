@@ -2766,3 +2766,6 @@ footer #footerLinks > ul > li:before {
 
 .indicadorData {
   height: auto !important; }
+
+.disaggregation-select-element option:first-child {
+  background-color: green; }
