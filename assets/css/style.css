@@ -2745,4 +2745,12 @@ a:hover {
   text-decoration: underline !important; }
 
 footer a, footer a:visited {
+  text-decoration: none !important;
   color: #FFFFFF; }
+
+footer #footerLinks > ul > li {
+  margin: 3px 10px 3px 0 !important; }
+
+footer #footerLinks > ul > li:before {
+  content: "|";
+  padding-right: 5px; }
