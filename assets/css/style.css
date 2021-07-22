@@ -2732,12 +2732,8 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .lead-copy {
   font-size: 16px !important; }
 
-.footer-ods {
-  background: grey url("../img/sdgbg.png") top left repeat-x !important;
-  padding-top: 15px !important;
-  height: auto !important; }
-
-.container {
+div.footer-ods > div.container {
+  background: red url("../img/sdgbg.png") top left repeat-x !important;
   height: auto !important; }
 
 .frontpage-cards {
