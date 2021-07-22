@@ -7,40 +7,42 @@
 }
 
 .lead-copy {
-    font-size: 16px !important;
+  font-size: 16px !important;
 }
 
-.footer-ods{
-	background: grey url("../img/sdgbg.png") top left repeat-x !important;
-	padding-top: 15px !important;
-  height:100px !important;
+.footer-ods {
+  background: grey url("../img/sdgbg.png") top left repeat-x !important;
+  padding-top: 15px !important;
+  height: 100px !important;
 }
 
-.footer-ods-container{
-  background-color: grey !important; 
-  height:100px !important;
+.footer-ods-container {
+  background-color: grey !important;
+  height: 100px !important;
 }
 
-.frontpage-cards{
+.frontpage-cards {
   padding-bottom: 25px !important;
 }
 
- a:hover{
-   text-decoration: underline !important;
- }
-
-footer a, footer a:visited  {
+a {
   text-decoration: none !important;
-	color: #FFFFFF;
+}
+a:hover {
+  text-decoration: underline !important;
 }
 
+footer a,
+footer a:visited {
+  text-decoration: none !important;
+  color: #ffffff;
+}
 
 footer #footerLinks > ul > li {
-	margin: 3px 10px 3px 0 !important;
+  margin: 3px 10px 3px 0 !important;
 }
 
 footer #footerLinks > ul > li:before {
   content: "|";
   padding-right: 5px;
 }
-
