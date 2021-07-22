@@ -31,18 +31,10 @@
         
         {
           "id": "8-3-1",
-          "title": "Proporción de empleo informal con respecto al empleo total, desglosada por sector y sexo",
-          "description": "",
-          "keywords": "",
-          "href": "/ods-municipios-andalucia/8-3-1",
-          "status": "complete"
-        },
-        {
-          "id": "8-3-1-a",
           "title": "Tasa de desempleo",
           "description": "Tasa de desempleo",
           "keywords": "",
-          "href": "/ods-municipios-andalucia/8-3-1-a",
+          "href": "/ods-municipios-andalucia/8-3-1",
           "status": "complete"
         }]
     }

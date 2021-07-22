@@ -1674,7 +1674,7 @@
           }
         ]
       },
-      "title": "8-3-1"
+      "title": "Tasa de desempleo"
     },
     {
       "path": "7-1-2-a/data.csv",
@@ -4200,30 +4200,6 @@
         ]
       },
       "title": "Población extranjera"
-    },
-    {
-      "path": "8-3-1-a/data.csv",
-      "name": "8-3-1-a",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "number",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "number",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Tasa de desempleo"
     }
   ]
 }
