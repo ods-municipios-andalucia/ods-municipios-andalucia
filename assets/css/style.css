@@ -2768,4 +2768,5 @@ footer #footerLinks > ul > li:before {
   height: auto !important; }
 
 .disaggregation-select-element option:first-child {
-  background-color: green; }
+  background-color: green;
+  content: "Todos"; }
