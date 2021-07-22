@@ -33,7 +33,7 @@ opensdg.autotrack = function(preset, category, action, label) {
  * TODO:
  * Integrate with high-contrast switcher.
  */
-(function($) {
+(function ($) {
 
   if (typeof L === 'undefined') {
     return;
@@ -92,8 +92,8 @@ opensdg.autotrack = function(preset, category, action, label) {
     // Support colorRange map option in string format.
     if (typeof options.mapOptions.colorRange === 'string') {
       var colorRangeParts = options.mapOptions.colorRange.split('.'),
-          colorRange = window,
-          overrideColorRange = true;
+        colorRange = window,
+        overrideColorRange = true;
       for (var i = 0; i < colorRangeParts.length; i++) {
         var colorRangePart = colorRangeParts[i];
         if (typeof colorRange[colorRangePart] !== 'undefined') {
@@ -126,7 +126,7 @@ opensdg.autotrack = function(preset, category, action, label) {
     }
 
     // Sort the map layers according to zoom levels.
-    this.mapLayers.sort(function(a, b) {
+    this.mapLayers.sort(function (a, b) {
       if (a.min_zoom === b.min_zoom) {
         return a.max_zoom - b.max_zoom;
       }
@@ -142,12 +142,12 @@ opensdg.autotrack = function(preset, category, action, label) {
   Plugin.prototype = {
 
     // Zoom to a feature.
-    zoomToFeature: function(layer) {
+    zoomToFeature: function (layer) {
       this.map.fitBounds(layer.getBounds());
     },
 
     // Build content for a tooltip.
-    getTooltipContent: function(feature) {
+    getTooltipContent: function (feature) {
       var tooltipContent = feature.properties.name;
       var tooltipData = this.getData(feature.properties);
       if (tooltipData) {
@@ -157,7 +157,7 @@ opensdg.autotrack = function(preset, category, action, label) {
     },
 
     // Update a tooltip.
-    updateTooltip: function(layer) {
+    updateTooltip: function (layer) {
       if (layer.getTooltip()) {
         var tooltipContent = this.getTooltipContent(layer.feature);
         layer.setTooltipContent(tooltipContent);
@@ -165,7 +165,7 @@ opensdg.autotrack = function(preset, category, action, label) {
     },
 
     // Create tooltip.
-    createTooltip: function(layer) {
+    createTooltip: function (layer) {
       if (!layer.getTooltip()) {
         var tooltipContent = this.getTooltipContent(layer.feature);
         layer.bindTooltip(tooltipContent, {
@@ -175,7 +175,7 @@ opensdg.autotrack = function(preset, category, action, label) {
     },
 
     // Select a feature.
-    highlightFeature: function(layer) {
+    highlightFeature: function (layer) {
       // Abort if the layer is not on the map.
       if (!this.map.hasLayer(layer)) {
         return;
@@ -191,7 +191,7 @@ opensdg.autotrack = function(preset, category, action, label) {
     },
 
     // Unselect a feature.
-    unhighlightFeature: function(layer) {
+    unhighlightFeature: function (layer) {
 
       // Reset the feature's style.
       layer.setStyle(this.options.styleNormal);
@@ -203,34 +203,34 @@ opensdg.autotrack = function(preset, category, action, label) {
 
       // Make sure other selections are still highlighted.
       var plugin = this;
-      this.selectionLegend.selections.forEach(function(selection) {
+      this.selectionLegend.selections.forEach(function (selection) {
         plugin.highlightFeature(selection);
       });
     },
 
     // Get all of the GeoJSON layers.
-    getAllLayers: function() {
+    getAllLayers: function () {
       return L.featureGroup(this.dynamicLayers.layers);
     },
 
     // Get only the visible GeoJSON layers.
-    getVisibleLayers: function() {
+    getVisibleLayers: function () {
       // Unfortunately relies on an internal of the ZoomShowHide library.
       return this.dynamicLayers._layerGroup;
     },
 
-    updateStaticLayers: function() {
+    updateStaticLayers: function () {
       // Make sure the static borders are always visible.
-      this.staticLayers._layerGroup.eachLayer(function(layer) {
+      this.staticLayers._layerGroup.eachLayer(function (layer) {
         layer.bringToFront();
       });
     },
 
     // Update the colors of the Features on the map.
-    updateColors: function() {
+    updateColors: function () {
       var plugin = this;
-      this.getAllLayers().eachLayer(function(layer) {
-        layer.setStyle(function(feature) {
+      this.getAllLayers().eachLayer(function (layer) {
+        layer.setStyle(function (feature) {
           return {
             fillColor: plugin.getColor(feature.properties),
           }
@@ -239,21 +239,21 @@ opensdg.autotrack = function(preset, category, action, label) {
     },
 
     // Update the tooltips of the selected Features on the map.
-    updateTooltips: function() {
+    updateTooltips: function () {
       var plugin = this;
-      this.selectionLegend.selections.forEach(function(selection) {
+      this.selectionLegend.selections.forEach(function (selection) {
         plugin.updateTooltip(selection);
       });
     },
 
     // Alter data before displaying it.
-    alterData: function(value) {
+    alterData: function (value) {
       // @deprecated start
       if (typeof opensdg.dataDisplayAlterations === 'undefined') {
         opensdg.dataDisplayAlterations = [];
       }
       // @deprecated end
-      opensdg.dataDisplayAlterations.forEach(function(callback) {
+      opensdg.dataDisplayAlterations.forEach(function (callback) {
         value = callback(value);
       });
       if (this._precision || this._precision === 0) {
@@ -266,7 +266,7 @@ opensdg.autotrack = function(preset, category, action, label) {
     },
 
     // Get the data from a feature's properties, according to the current year.
-    getData: function(props) {
+    getData: function (props) {
       if (props.values && props.values.length && props.values[this.currentDisaggregation][this.currentYear]) {
         return opensdg.dataRounding(props.values[this.currentDisaggregation][this.currentYear]);
       }
@@ -274,7 +274,7 @@ opensdg.autotrack = function(preset, category, action, label) {
     },
 
     // Choose a color for a GeoJSON feature.
-    getColor: function(props) {
+    getColor: function (props) {
       var data = this.getData(props);
       if (data) {
         return this.colorScale(data).hex();
@@ -285,13 +285,13 @@ opensdg.autotrack = function(preset, category, action, label) {
     },
 
     // Get the (long) URL of a geojson file, given a particular subfolder.
-    getGeoJsonUrl: function(subfolder) {
+    getGeoJsonUrl: function (subfolder) {
       var fileName = this.indicatorId + '.geojson';
       return [opensdg.remoteDataBaseUrl, 'geojson', subfolder, fileName].join('/');
     },
 
     // Initialize the map itself.
-    init: function() {
+    init: function () {
 
       // Create the map.
       this.map = L.map(this.element, {
@@ -306,7 +306,7 @@ opensdg.autotrack = function(preset, category, action, label) {
       this.staticLayers.addTo(this.map);
 
       // Add scale.
-      this.map.addControl(L.control.scale({position: 'bottomright'}));
+      this.map.addControl(L.control.scale({ position: 'bottomright' }));
 
       // Add tile imagery.
       if (this.options.tileURL && this.options.tileURL !== 'undefined' && this.options.tileURL != '') {
@@ -318,14 +318,14 @@ opensdg.autotrack = function(preset, category, action, label) {
 
       // Below we'll be figuring out the min/max values and available years.
       var minimumValues = [],
-          maximumValues = [],
-          availableYears = [];
+        maximumValues = [],
+        availableYears = [];
 
       // At this point we need to load the GeoJSON layer/s.
-      var geoURLs = this.mapLayers.map(function(item) {
+      var geoURLs = this.mapLayers.map(function (item) {
         return $.getJSON(plugin.getGeoJsonUrl(item.subfolder));
       });
-      $.when.apply($, geoURLs).done(function() {
+      $.when.apply($, geoURLs).done(function () {
 
         // Apparently "arguments" can either be an array of responses, or if
         // there was only one response, the response itself. This behavior is
@@ -411,7 +411,7 @@ opensdg.autotrack = function(preset, category, action, label) {
           $(plugin.element).parent().append(downloadButton);
 
           // Keep track of the minimums and maximums.
-          _.each(geoJson.features, function(feature) {
+          _.each(geoJson.features, function (feature) {
             if (feature.properties.values && feature.properties.values.length) {
               availableYears = availableYears.concat(Object.keys(feature.properties.values[0]));
               minimumValues.push(_.min(Object.values(feature.properties.values[0])));
@@ -431,6 +431,18 @@ opensdg.autotrack = function(preset, category, action, label) {
         // And we can now update the colors.
         plugin.updateColors();
 
+        // Add the disaggregation select if necessary.
+        var disaggregationOptions = plugin.getVisibleLayers().toGeoJSON().features[0].properties.disaggregations.map(function (disaggregation) {
+          return Object.values(disaggregation).filter(function (subcategory) {
+            return subcategory;
+          }).map(function (subcategory) {
+            return translations.t(subcategory);
+          }).join(' - ');
+        });
+        if (disaggregationOptions.length > 1) {
+          plugin.map.addControl(L.Control.disaggregationSelect(plugin, disaggregationOptions));
+        }
+
         // Add zoom control.
         plugin.map.addControl(L.Control.zoomHome());
 
@@ -440,7 +452,7 @@ opensdg.autotrack = function(preset, category, action, label) {
         // Add the year slider.
         plugin.map.addControl(L.Control.yearSlider({
           years: plugin.years,
-          yearChangeCallback: function(e) {
+          yearChangeCallback: function (e) {
             plugin.currentYear = plugin.years[e.target._currentTimeIndex];
             plugin.updateColors();
             plugin.updateTooltips();
@@ -459,7 +471,7 @@ opensdg.autotrack = function(preset, category, action, label) {
           layer: plugin.getAllLayers(),
           propertyName: 'name',
           marker: false,
-          moveToLocation: function(latlng) {
+          moveToLocation: function (latlng) {
             plugin.zoomToFeature(latlng.layer);
             if (!plugin.selectionLegend.isSelected(latlng.layer)) {
               plugin.highlightFeature(latlng.layer);
@@ -519,7 +531,7 @@ opensdg.autotrack = function(preset, category, action, label) {
           var geoJsonLayer = e.target;
           // For desktop, we have to make sure that no features remain
           // highlighted, as they might have been highlighted on mouseover.
-          geoJsonLayer.eachLayer(function(layer) {
+          geoJsonLayer.eachLayer(function (layer) {
             if (!plugin.selectionLegend.isSelected(layer)) {
               plugin.unhighlightFeature(layer);
             }
@@ -533,8 +545,8 @@ opensdg.autotrack = function(preset, category, action, label) {
       });
 
       // Perform some last-minute tasks when the user clicks on the "Map" tab.
-      $('.map .nav-link').click(function() {
-        setTimeout(function() {
+      $('.map .nav-link').click(function () {
+        setTimeout(function () {
           $('#map #loader-container').hide();
           // Leaflet needs "invalidateSize()" if it was originally rendered in a
           // hidden element. So we need to do that when the tab is clicked.
@@ -564,7 +576,7 @@ opensdg.autotrack = function(preset, category, action, label) {
       });
     },
 
-    featureShouldDisplay: function(feature) {
+    featureShouldDisplay: function (feature) {
       var display = true;
       display = display && typeof feature.properties.name !== 'undefined';
       display = display && typeof feature.properties.geocode !== 'undefined';
@@ -573,7 +585,7 @@ opensdg.autotrack = function(preset, category, action, label) {
       return display;
     },
 
-    featuresShouldDisplay: function(features) {
+    featuresShouldDisplay: function (features) {
       for (var i = 0; i < features.length; i++) {
         if (this.featureShouldDisplay(features[i])) {
           return true;
@@ -585,8 +597,8 @@ opensdg.autotrack = function(preset, category, action, label) {
 
   // A really lightweight plugin wrapper around the constructor,
   // preventing against multiple instantiations
-  $.fn['sdgMap'] = function(options) {
-    return this.each(function() {
+  $.fn['sdgMap'] = function (options) {
+    return this.each(function () {
       if (!$.data(this, 'plugin_sdgMap')) {
         $.data(this, 'plugin_sdgMap', new Plugin(this, options));
       }
