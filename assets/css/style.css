@@ -2767,6 +2767,6 @@ footer #footerLinks > ul > li:before {
 .indicadorData {
   height: auto !important; }
 
-#main-content #map .disaggregation-select option:first-child {
+#main-content #map .disaggregation-select option:first-child::after {
   background-color: green !important;
   content: "Todos" !important; }
