@@ -2741,12 +2741,16 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .frontpage-cards {
   padding-bottom: 25px !important; }
 
+a {
+  text-decoration: none !important; }
+
 a:hover {
   text-decoration: underline !important; }
 
-footer a, footer a:visited {
+footer a,
+footer a:visited {
   text-decoration: none !important;
-  color: #FFFFFF; }
+  color: #ffffff; }
 
 footer #footerLinks > ul > li {
   margin: 3px 10px 3px 0 !important; }
