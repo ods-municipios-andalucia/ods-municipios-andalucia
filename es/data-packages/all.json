@@ -3366,19 +3366,6 @@
             "title": "GeoCode"
           },
           {
-            "name": "Grado urbanización",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Ciudades",
-                "Zona de densidad intermedia",
-                "Zona rural"
-              ]
-            },
-            "title": "Grado urbanización"
-          },
-          {
             "name": "Municipio",
             "type": "string",
             "constraints": {
