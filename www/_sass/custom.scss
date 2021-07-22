@@ -2,6 +2,10 @@
   display: none !important;
 }
 
+#main-content {
+	padding-bottom: 70px !important;
+}
+
 #main-content #map .leaflet-bar-timecontrol {
   display: none !important;
 }
@@ -43,6 +47,7 @@ footer #footerLinks > ul > li {
 }
 
 footer #footerLinks > ul > li:before {
+  color: #ffffff !important;
   content: "|";
   padding-right: 5px;
 }
