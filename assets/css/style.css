@@ -2732,6 +2732,9 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
 .lead-copy {
   font-size: 16px !important; }
 
+.footer-ods {
+  height: auto !important; }
+
 div.footer-ods > div.container {
   background: red url("../img/sdgbg.png") top left repeat-x !important;
   height: auto !important; }
