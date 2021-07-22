@@ -60,7 +60,7 @@ footer #footerLinks > ul > li:before {
   height: auto !important;
 }
 
-
-.disaggregation-select-element option:first-child{
+.disaggregation-select-element option:first-child {
   background-color: green;
+  content: "Todos";
 }
