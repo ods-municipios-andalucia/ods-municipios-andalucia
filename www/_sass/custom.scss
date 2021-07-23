@@ -25,7 +25,7 @@
 }
 
 div.footer-ods > div.container {
-  background: red url("../img/sdgbg.png") top left repeat-x !important;
+  background: grey url("../img/sdgbg.png") top left repeat-x !important;
   height: auto !important;
 }
 
@@ -60,7 +60,7 @@ footer #footerLinks > ul > li:before {
   height: auto !important;
 }
 
-#main-content #map .disaggregation-select option:first-child::after {
-  background-color: green !important;
-  content: "Todos" !important;
-}
+// #main-content #map .disaggregation-select option:first-child::after {
+//   background-color: green !important;
+//   content: "Todos" !important;
+// }
