@@ -2739,7 +2739,7 @@ body.contrast-high.layout-search form input, body.contrast-high.layout-search fo
   height: auto !important; }
 
 div.footer-ods > div.container {
-  background: red url("../img/sdgbg.png") top left repeat-x !important;
+  background: grey url("../img/sdgbg.png") top left repeat-x !important;
   height: auto !important; }
 
 .frontpage-cards {
@@ -2766,7 +2766,3 @@ footer #footerLinks > ul > li:before {
 
 .indicadorData {
   height: auto !important; }
-
-#main-content #map .disaggregation-select option:first-child::after {
-  background-color: green !important;
-  content: "Todos" !important; }
