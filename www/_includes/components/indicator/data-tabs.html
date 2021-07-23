@@ -3,7 +3,7 @@
   </div>
   <ul class="nav nav-tabs non-stacking-tabs data-view" role="tablist">
     {%- if page.indicator.data_show_map -%}
-    <li role="presentation" class="nav-item map active" style="display:none">
+    <li role="presentation" class="nav-item map active">
       <a data-no-disagg="true" class="nav-link" data-toggle="tab" id="tab-mapview" href="#mapview" aria-controls="mapview" role="tab" {% include autotrack.html preset="tab_data_map" category="Tab change" action="Change data view" label="Change to Map tab" %} aria-describedby="table-alternative">{{ page.t.indicator.map }}</a>
     </li>
     <li role="presentation" class="nav-item">
