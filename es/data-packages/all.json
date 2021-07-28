@@ -4212,30 +4212,6 @@
       "title": "Población sin acceso a zonas verdes en su vecindario. Diferencia entre el porcentaje de mujeres y de hombres"
     },
     {
-      "path": "10-2-2/data.csv",
-      "name": "10-2-2",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "number",
-            "title": "Value"
-          },
-          {
-            "name": "Year",
-            "type": "number",
-            "title": "Year"
-          }
-        ]
-      },
-      "title": "Concentración residencial de la población extranjera"
-    },
-    {
       "path": "11-7-1-c/data.csv",
       "name": "11-7-1-c",
       "profile": "tabular-data-resource",
