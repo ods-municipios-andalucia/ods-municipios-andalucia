@@ -72,6 +72,11 @@ frontpage_goals_grid:
 frontpage_cards:
   - title: frontpage.download_all
     include: components/download-all-data.html
+  - title: Información metodológica del proyecto
+    # content: |
+    #  El Sistema de Indicadores de Desarrollo Sostenible de Andalucía para la Agenda 2030 tiene por objetivo constituir un marco de indicadores estadísticos, alineados con los establecidos por Naciones Unidas, que sirva para el seguimiento, a diferentes niveles territoriales, de los objetivos y metas de la Agenda 2030 para el Desarrollo Sostenible de las Naciones Unidas.
+    button_label: Descargar 
+    button_link: https://ods-municipios-andalucia.github.io/ods-municipios-andalucia/assets/download/pdf/Methodology_Report.pdf    
   - title: Sistema de Indicadores de Desarrollo Sostenible de Andalucía para la Agenda 2030
     # content: |
     #  El Sistema de Indicadores de Desarrollo Sostenible de Andalucía para la Agenda 2030 tiene por objetivo constituir un marco de indicadores estadísticos, alineados con los establecidos por Naciones Unidas, que sirva para el seguimiento, a diferentes niveles territoriales, de los objetivos y metas de la Agenda 2030 para el Desarrollo Sostenible de las Naciones Unidas.
